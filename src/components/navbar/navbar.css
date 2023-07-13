@@ -4,10 +4,5 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 800;
-    display: inline-flex;
-    position: absolute;
 }
 
-.navbar-wrap{
-    border-bottom: #F5F5F5 1px;
-}
