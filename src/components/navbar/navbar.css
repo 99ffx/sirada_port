@@ -1,8 +1,49 @@
 .headline-left {
-    color: #FFF;
+    color: #fff;
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
     font-weight: 800;
 }
+
+.contact-me .btn {
+    border-radius: 24px;
+    border: 2px solid #96f18e;
+    padding: 10px 17px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    --bs-btn-hover-bg: #96f18e;
+    --bs-btn-hover-border-color: #96f18e;
+}
+.contact-me .btn:hover{
+    color: #27323A;
+}
+
+.contact-me .btn:first-child:active{
+    --bs-btn-hover-bg: #96f18e;
+    --bs-btn-hover-border-color: #96f18e;
+}
+
+.col-3{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.col-9{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+}
+
+
+
+
+
+
 

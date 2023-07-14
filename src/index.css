@@ -1,7 +1,7 @@
 body {
-  margin: 20px 99px !important;
-  /* font-family: 'Poppins', sans-serif;
-  font-family: 'Tenor Sans', sans-serif; */
+  margin: 20px 99px;
+  font-family: 'Poppins', sans-serif !important;
+  /* font-family: 'Tenor Sans', sans-serif; */
   background-color: #27323A !important;
 }
 
