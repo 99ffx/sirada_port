@@ -1,0 +1,62 @@
+.headline {
+    color: #5C6E75;
+    font-family: Tenor Sans;
+    font-size: 200px;
+    font-weight: 400;
+    letter-spacing: 88px;
+    margin-top: 70px;
+    display: flex;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.headline-sub.container{
+    margin-top: -90px;
+    display: grid;
+    align-content: space-evenly;
+    justify-content: end;
+    justify-items: center;
+}
+
+.portfolio {
+    color: #F5F5F5;
+    font-family: Tenor Sans;
+    font-size: 110px;
+    font-weight: 400;
+}
+
+.ux {
+    font-family: Poppins;
+    color: #F5F5F5;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.headline-sub .btn{
+    background-color: #96F18E;
+    border-radius: 60px;
+    margin-top: 30px;
+}
+
+.headline-sub .btn:hover {
+    border: 3px solid #96f18e;
+  
+}
+
+.hello{
+    color: #FFF;
+font-family: Tenor Sans;
+font-size: 64px;
+font-weight: 400;
+}
+
+.sirada{
+    color: #29A19C;
+    font-family: Tenor Sans;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+
+

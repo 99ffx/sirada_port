@@ -3,8 +3,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <>
-      <div className="container mt-20">
+    <div id="navbar" className=" sticky-top" style={{backgroundColor: "#27323A"}}>
+      <div className="container mt-20 sticky-top">
         <div className="row">
           <div className="col-9">
             <div className="headline-left">
@@ -15,10 +15,15 @@ function Navbar() {
           </div>
           <div className="col-3">
             <div className="contact-me">
-              <button type="button" class="btn btn-outline-primary ps-17 pe-17"
-              onClick={()=> window.location = 'mailto:sirada.2635@gmail.com'}>
+              <button
+                type="button"
+                className="btn ps-17 pe-17"
+                onClick={() =>
+                  (window.location = "mailto:sirada.2635@gmail.com")
+                }
+              >
                 Contact Me
-                <i class="bi bi-envelope ms-2"></i>
+                <i className="bi bi-envelope ms-2"></i>
               </button>
             </div>
             <div className="linkedin">
@@ -27,7 +32,7 @@ function Navbar() {
                 target="blank"
               >
                 <i
-                  class="bi bi-linkedin"
+                  className="bi bi-linkedin"
                   style={{ fontSize: "2.6em", color: "#0e76a8" }}
                 ></i>
               </a>
@@ -35,8 +40,8 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <hr style={{marginTop:'0', opacity:'1', color:'white'}} />
-    </>
+      <hr style={{ marginTop: "0", opacity: "1", color: "white" }} />
+    </div>
   );
 }
 
