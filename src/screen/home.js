@@ -93,22 +93,73 @@ function home() {
               .<br />
               .
               <br />.
-              <br /></span>
-              <p  style={{
+              <br />
+            </span>
+            <p
+              style={{
                 fontSize: "36px",
                 lineHeight: "112%",
                 fontWeight: "400",
-              }}>v</p>
-            
-            <span style={{
+              }}
+            >
+              v
+            </p>
+            <span
+              style={{
                 fontSize: "26px",
-              }}>
+              }}
+            >
               scroll down <br />
               to
               <br />
               know me more !
             </span>
           </div>
+        </div>
+      </div>
+      <div className="aboutMe container">
+        <div className="aboutMe-wrapper">
+          <div className="aboutMe-headline1">ABOUT</div>
+          <div className="aboutMe-headline2">ME</div>
+        </div>
+        <div className="aboutme-context">
+          <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
+            Self-Motivated
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <circle cx="8" cy="8" r="8" fill="#29A19C" />
+          </svg>
+          <span style={{ color: "#96f18e", fontSize: "40px", padding: "27px" }}>
+            Eager to Learn
+          </span>
+          <br />
+          <span style={{ color: "#96f18e", fontSize: "40px", padding: "27px" }}>
+            Proactive
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <circle cx="8" cy="8" r="8" fill="#29A19C" />
+          </svg>
+          <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
+            Dedicated Team Player
+          </span>
+          <br />
+          <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
+            Possess 
+            <span className="ms-3" style={{ color: "#96f18e "}}>Positive </span>
+            Attitude
+          </span>
         </div>
       </div>
     </div>

@@ -72,3 +72,30 @@
     font-size: 29px;
     font-weight: 300;
 }
+
+.aboutMe-wrapper{
+    margin-top: 169px;
+    display: block;
+}
+
+.aboutMe-headline1{
+    color: #FFF;
+    font-family: Tenor Sans;
+    font-size: 160px;
+    text-align: center;
+}
+
+.aboutMe-headline2{
+    color: #29A19C;
+    font-family: Tenor Sans;
+    font-size: 160px;
+    text-align: center;
+    margin-left: 44.5%;
+    margin-top: -155px;
+}
+
+.aboutme-context{
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}
