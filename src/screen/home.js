@@ -1,6 +1,19 @@
 import React from "react";
 import "../screen/home.css";
-
+import myPic from "../assests/1.png";
+import htmlLogo from "../assests/html.png";
+import cssLogo from "../assests/css.png";
+import jsLogo from "../assests/js.png"
+import tsLogo from "../assests/ts.png"
+import figma from "../assests/figma.png"
+import angular from "../assests/angular.png"
+import git from "../assests/git.png"
+import github from "../assests/github.png"
+import materialUI from "../assests/matUI.png"
+import nodeJs from "../assests/node.png"
+import reactJs from "../assests/react.png"
+import scss from "../assests/sass.png"
+import postman from "../assests/postman.png"
 function home() {
   return (
     <div>
@@ -61,12 +74,7 @@ function home() {
         </div>
 
         <div className="breif-context container">
-          <img
-            href="../assests/IMG_5205.JPG"
-            width="362px"
-            height="488px"
-            alt=""
-          />
+          <img src={myPic} width="362px" height="488px" alt="" />
           <div className="explaination">
             I am a{" "}
             <span style={{ fontStyle: "italic", color: "#96f18e" }}>
@@ -156,10 +164,186 @@ function home() {
           </span>
           <br />
           <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
-            Possess 
-            <span className="ms-3" style={{ color: "#96f18e "}}>Positive </span>
+            Possess
+            <span className="ms-3" style={{ color: "#96f18e " }}>
+              Positive{" "}
+            </span>
             Attitude
           </span>
+        </div>
+      </div>
+      <div className="techstack container">
+        <div className="techstack-headline">
+          <span>TECH</span>
+          <span style={{ color: "#29A19C" }}>/</span>
+          <span>STACK</span>
+        </div>
+        <div className="tech-box">
+          <button
+            class="btn"
+            style={{ color: "#96F18E", fontSize: "40px", padding: "19px 45px" }}
+          >
+            HTML
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            CSS
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            SCSS
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#96F18E", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Node.js
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Figma
+          </button>
+          <br />
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Javascript
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#29A19C", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Typescript
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Ant Design
+          </button>
+          <br />
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Material UI
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#96F18E", fontSize: "40px", padding: "19px 45px" }}
+          >
+            State Management
+          </button>
+          <br />
+          <button
+            class="btn"
+            style={{ color: "#29A19C", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Bootstrap
+          </button>
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            Angular
+          </button>
+          <br />
+          <button
+            class="btn"
+            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+          >
+            React Js
+          </button>
+        </div>
+        <div className="tech-logo">
+          <img src={htmlLogo} alt="" width="69px" height="69px" />
+          <img src={cssLogo} alt="css logo" width="69px" height="69px" />
+          <img src={jsLogo} alt="" width="69px" height="69px" />
+          <img src={tsLogo} alt="" width="69px" height="69px" />
+          <img src={scss} alt="" width="69px" height="69px" />
+          <img src={angular} alt="" width="69px" height="69px" />
+          <img src={reactJs} alt="" width="69px" height="69px" />
+          <img src={nodeJs} alt="" width="69px" height="69px" />
+          <img src={postman} alt="" width="69px" height="69px" />
+          <img src={git} alt="" width="69px" height="69px" />
+          <img src={github} alt="" width="69px" height="69px" />
+          <img src={figma} alt="" width="66px" height="66px" />
+          <img src={materialUI} alt="" width="69px" height="69px" />
+          <i class="bi bi-bootstrap-fill" style={{fontSize:'69px', color:"#6f42c1"}} ></i>
+        </div>
+        <div className="connect container">
+          <div className="headline-left">
+          <div className="connect-headline">
+            <span style={{color:'#FFF'}}>Let'</span>
+            <span style={{color:'#29A19C'}}>s</span><br />
+            <span style={{color:'#FFF', fontSize: '160px', letterSpacing:'-11.2px'}}>Co</span>
+            <span style={{color:'#FFF', fontSize: '160px', letterSpacing:'-11.2px'}}>nn</span>
+            <span style={{color:'#96F18E', fontSize: '160px', letterSpacing:'-11.2px'}}>ect</span>
+          </div>
+          <span style={{fontWeight:'400', marginTop:'27px'}} >Don’t be a stranger !</span>
+          <br />
+          <a href="../assests/Sirada-CV-Euro.pdf" download>
+          <button type="button" className="btn-download">
+            <div
+              className="btn-context"
+              style={{
+                padding: "20px",
+                display: "grid",
+                gridAutoFlow: "column",
+              }}
+            >
+              <span
+                className="download me-3"
+                style={{
+                  color: "#5C6E75",
+                  fontWeight: "500",
+                  fontSize: "36px",
+                }}
+              >
+                Download
+              </span>
+              <span
+                className="cv"
+                style={{ color: "black", fontWeight: "600", fontSize: "36px" }}
+              >
+                CV
+              </span>
+              <i
+                className="bi bi-box-arrow-up-right"
+                style={{
+                  fontSize: "2.3em",
+                  marginLeft: "18px",
+                  color: "#5C6E75",
+                }}
+              ></i>
+            </div>
+          </button>
+        </a>
+          </div>
+
+          <div className="email-right">
+            <div>
+            <span style={{fontWeight:'400', color:'white'}}>What’s the topic ?</span>
+              <hr style={{ borderWidth:'3px',width:'390px', opacity: "1", color: "#96F18E" }} />
+            </div>
+            <div>
+            <span style={{fontWeight:'400', color:'white'}}>What’s your Email ?</span>
+              <hr style={{ borderWidth:'3px',width:'390px', opacity: "1", color: "#96F18E" }} />
+            </div>
+            <div className="box">
+            Type your message here ...
+            </div>
+            <button type="button" className="btn-send">Send</button>
+
+          </div>
+          
         </div>
       </div>
     </div>
