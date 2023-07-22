@@ -3,17 +3,17 @@ import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
 import cssLogo from "../assests/css.png";
-import jsLogo from "../assests/js.png"
-import tsLogo from "../assests/ts.png"
-import figma from "../assests/figma.png"
-import angular from "../assests/angular.png"
-import git from "../assests/git.png"
-import github from "../assests/github.png"
-import materialUI from "../assests/matUI.png"
-import nodeJs from "../assests/node.png"
-import reactJs from "../assests/react.png"
-import scss from "../assests/sass.png"
-import postman from "../assests/postman.png"
+import jsLogo from "../assests/js.png";
+import tsLogo from "../assests/ts.png";
+import figma from "../assests/figma.png";
+import angular from "../assests/angular.png";
+import git from "../assests/git.png";
+import github from "../assests/github.png";
+import materialUI from "../assests/matUI.png";
+import nodeJs from "../assests/node.png";
+import reactJs from "../assests/react.png";
+import scss from "../assests/sass.png";
+import postman from "../assests/postman.png";
 function home() {
   return (
     <div>
@@ -276,74 +276,135 @@ function home() {
           <img src={github} alt="" width="69px" height="69px" />
           <img src={figma} alt="" width="66px" height="66px" />
           <img src={materialUI} alt="" width="69px" height="69px" />
-          <i class="bi bi-bootstrap-fill" style={{fontSize:'69px', color:"#6f42c1"}} ></i>
+          <i
+            class="bi bi-bootstrap-fill"
+            style={{ fontSize: "69px", color: "#6f42c1" }}
+          ></i>
         </div>
-        <div className="connect container">
-          <div className="headline-left">
+      </div>
+      <div className="connect container">
+        <div className="headline-left">
           <div className="connect-headline">
-            <span style={{color:'#FFF'}}>Let'</span>
-            <span style={{color:'#29A19C'}}>s</span><br />
-            <span style={{color:'#FFF', fontSize: '160px', letterSpacing:'-11.2px'}}>Co</span>
-            <span style={{color:'#FFF', fontSize: '160px', letterSpacing:'-11.2px'}}>nn</span>
-            <span style={{color:'#96F18E', fontSize: '160px', letterSpacing:'-11.2px'}}>ect</span>
+            <span style={{ color: "#FFF" }}>Let'</span>
+            <span style={{ color: "#29A19C" }}>s</span>
+            <br />
+            <div className="connect-sub" style={{ marginTop: "10px" }}>
+              <span
+                style={{
+                  color: "#FFF",
+                  fontSize: "120px",
+                  letterSpacing: "-11.2px",
+                }}
+              >
+                Co
+              </span>
+              <span
+                style={{
+                  color: "#FFF",
+                  fontSize: "120px",
+                  letterSpacing: "-11.2px",
+                }}
+              >
+                nn
+              </span>
+              <span
+                style={{
+                  color: "#96F18E",
+                  fontSize: "120px",
+                  letterSpacing: "-11.2px",
+                }}
+              >
+                ect
+              </span>
+            </div>
           </div>
-          <span style={{fontWeight:'400', marginTop:'27px'}} >Don’t be a stranger !</span>
+          <span style={{ fontWeight: "400", marginTop: "27px" }}>
+            Don’t be a stranger !
+          </span>
           <br />
           <a href="../assests/Sirada-CV-Euro.pdf" download>
-          <button type="button" className="btn-download">
-            <div
-              className="btn-context"
-              style={{
-                padding: "20px",
-                display: "grid",
-                gridAutoFlow: "column",
-              }}
-            >
-              <span
-                className="download me-3"
+            <button type="button" className="btn-download">
+              <div
+                className="btn-context"
                 style={{
-                  color: "#5C6E75",
-                  fontWeight: "500",
-                  fontSize: "36px",
+                  padding: "10px 13px",
+                  display: "grid",
+                  gridAutoFlow: "column",
+                  alignItems: "center",
                 }}
               >
-                Download
-              </span>
-              <span
-                className="cv"
-                style={{ color: "black", fontWeight: "600", fontSize: "36px" }}
-              >
-                CV
-              </span>
-              <i
-                className="bi bi-box-arrow-up-right"
-                style={{
-                  fontSize: "2.3em",
-                  marginLeft: "18px",
-                  color: "#5C6E75",
-                }}
-              ></i>
-            </div>
+                <span
+                  className="download me-3"
+                  style={{
+                    color: "#5C6E75",
+                    fontWeight: "500",
+                    fontSize: "25px",
+                  }}
+                >
+                  Download
+                </span>
+                <span
+                  className="cv"
+                  style={{
+                    color: "black",
+                    fontWeight: "600",
+                    fontSize: "25px",
+                  }}
+                >
+                  CV
+                </span>
+                <i
+                  className="bi bi-box-arrow-up-right"
+                  style={{
+                    marginLeft: "18px",
+                    color: "#5C6E75",
+                  }}
+                ></i>
+              </div>
+            </button>
+          </a>
+        </div>
+
+        <div className="email-right" style={{ width: "380px" }}>
+          <div class="input-group ">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What’s the topic ?"
+              onFocus={(e) => (e.target.placeholder = " ")}
+              onBlur={(e) => (e.target.placeholder = "What’s the topic ?")}
+              aria-label="subject"
+            />
+          </div>
+
+          <div class="input-group " style={{ marginTop: "40px" }}>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What’s your Email ?"
+              onFocus={(e) => (e.target.placeholder = " ")}
+              onBlur={(e) => (e.target.placeholder = "What’s the Email ?")}
+              aria-label="sender-email"
+            />
+          </div>
+
+          <div class="input-group" style={{ marginTop: "40px" }}>
+            <textarea
+              class="form-control"
+              type="text"
+              className="form-control"
+              placeholder="Type your message here ..."
+              onFocus={(e) => (e.target.placeholder = " ")}
+              onBlur={(e) =>
+                (e.target.placeholder = "Type your message here ...")
+              }
+              aria-label="message"
+              style={{ height: "200px", width: "180px" }}
+            ></textarea>
+          </div>
+          <button type="button" className="btn-send">
+            Send
           </button>
-        </a>
-          </div>
-
-          <div className="email-right">
-            <div>
-            <span style={{fontWeight:'400', color:'white'}}>What’s the topic ?</span>
-              <hr style={{ borderWidth:'3px',width:'390px', opacity: "1", color: "#96F18E" }} />
-            </div>
-            <div>
-            <span style={{fontWeight:'400', color:'white'}}>What’s your Email ?</span>
-              <hr style={{ borderWidth:'3px',width:'390px', opacity: "1", color: "#96F18E" }} />
-            </div>
-            <div className="box">
-            Type your message here ...
-            </div>
-            <button type="button" className="btn-send">Send</button>
-
-          </div>
-          
         </div>
       </div>
     </div>
