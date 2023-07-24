@@ -33,7 +33,7 @@ function Navbar() {
               >
                 <i
                   className="bi bi-linkedin"
-                  style={{ fontSize: "2.6em", color: "#0e76a8" }}
+                  style={{ fontSize: "1.8em", color: "white" }}
                 ></i>
               </a>
             </div>

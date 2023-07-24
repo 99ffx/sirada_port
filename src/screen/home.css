@@ -199,11 +199,23 @@ input.form-control:focus, textarea.form-control:focus{
 .btn-download {
     background-color: #96F18E;
     border-radius: 60px;
-    margin-top: 30px;
 }
 
 .btn-download:hover {
     border: 3px solid #96f18e;
     background-color: #27323A;
 
+}
+
+.linkedin{
+    border: 2px solid #96f18e;
+    padding: 1px 18px;
+    border-radius: 42px;
+}
+
+.getInTouch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
 }

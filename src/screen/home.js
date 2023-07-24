@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
@@ -14,7 +14,24 @@ import nodeJs from "../assests/node.png";
 import reactJs from "../assests/react.png";
 import scss from "../assests/sass.png";
 import postman from "../assests/postman.png";
-function home() {
+function Home() {
+  const [myemail, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [msg, setMsg] = useState("");
+
+
+
+  const onSend = (myemail) => {
+    console.log(myemail);
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(myemail)){
+      console.log(myemail,'correct');
+    }else{
+      console.log(myemail,'incorrect')
+    }
+  };
+
+  
   return (
     <div>
       <div className="headline container">
@@ -322,93 +339,118 @@ function home() {
             Don’t be a stranger !
           </span>
           <br />
-          <a href="../assests/Sirada-CV-Euro.pdf" download>
-            <button type="button" className="btn-download">
-              <div
-                className="btn-context"
-                style={{
-                  padding: "10px 13px",
-                  display: "grid",
-                  gridAutoFlow: "column",
-                  alignItems: "center",
-                }}
+          <div className="getInTouch">
+            <a href="../assests/Sirada-CV-Euro.pdf" download>
+              <button type="button" className="btn-download">
+                <div
+                  className="btn-context"
+                  style={{
+                    padding: "10px 13px",
+                    display: "grid",
+                    gridAutoFlow: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <span
+                    className="download me-3"
+                    style={{
+                      color: "#5C6E75",
+                      fontWeight: "500",
+                      fontSize: "25px",
+                    }}
+                  >
+                    Download
+                  </span>
+                  <span
+                    className="cv"
+                    style={{
+                      color: "black",
+                      fontWeight: "600",
+                      fontSize: "25px",
+                    }}
+                  >
+                    CV
+                  </span>
+                  <i
+                    className="bi bi-box-arrow-up-right"
+                    style={{
+                      marginLeft: "18px",
+                      color: "#5C6E75",
+                    }}
+                  ></i>
+                </div>
+              </button>
+            </a>
+            <div className="linkedin">
+              <a
+                href="https://www.linkedin.com/in/sirada-kittipaisarnkul-068854224/"
+                target="blank"
               >
-                <span
-                  className="download me-3"
-                  style={{
-                    color: "#5C6E75",
-                    fontWeight: "500",
-                    fontSize: "25px",
-                  }}
-                >
-                  Download
-                </span>
-                <span
-                  className="cv"
-                  style={{
-                    color: "black",
-                    fontWeight: "600",
-                    fontSize: "25px",
-                  }}
-                >
-                  CV
-                </span>
                 <i
-                  className="bi bi-box-arrow-up-right"
-                  style={{
-                    marginLeft: "18px",
-                    color: "#5C6E75",
-                  }}
+                  className="bi bi-linkedin"
+                  style={{ fontSize: "1.4em", color: "white" }}
                 ></i>
-              </div>
-            </button>
-          </a>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="email-right" style={{ width: "380px" }}>
-          <div class="input-group ">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="What’s the topic ?"
-              onFocus={(e) => (e.target.placeholder = " ")}
-              onBlur={(e) => (e.target.placeholder = "What’s the topic ?")}
-              aria-label="subject"
-            />
-          </div>
+          <form className="needs-validation">
+            <div class="input-group ">
+              <input
+                type="text"
+                class="form-control"
+                value={subject}
+                placeholder="What’s the topic ?"
+                onChange={(e) => setSubject(e.target.value)}
+                onFocus={(e) => (e.target.placeholder = " ")}
+                onBlur={(e) => (e.target.placeholder = "What’s the topic ?")}
+                aria-label="subject"
+                required
+              />
+            </div>
 
-          <div class="input-group " style={{ marginTop: "40px" }}>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="What’s your Email ?"
-              onFocus={(e) => (e.target.placeholder = " ")}
-              onBlur={(e) => (e.target.placeholder = "What’s the Email ?")}
-              aria-label="sender-email"
-            />
-          </div>
+            <div class="input-group " style={{ marginTop: "40px" }}>
+              <input
+                type="email"
+                class="form-control"
+                value={myemail}
+                placeholder="What’s your Email ?"
+                onChange={(e) => setEmail(e.target.value)}
+                onFocus={(e) => (e.target.placeholder = " ")}
+                onBlur={(e) => (e.target.placeholder = "What’s the Email ?")}
+                aria-label="sender-email"
+                required
+              />
+              <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
 
-          <div class="input-group" style={{ marginTop: "40px" }}>
-            <textarea
-              class="form-control"
-              type="text"
-              className="form-control"
-              placeholder="Type your message here ..."
-              onFocus={(e) => (e.target.placeholder = " ")}
-              onBlur={(e) =>
-                (e.target.placeholder = "Type your message here ...")
-              }
-              aria-label="message"
-              style={{ height: "200px", width: "180px" }}
-            ></textarea>
-          </div>
-          <button type="button" className="btn-send">
-            Send
-          </button>
+            <div class="input-group" style={{ marginTop: "40px" }}>
+              <textarea
+                class="form-control"
+                type="text"
+                className="form-control"
+                value={msg}
+                placeholder="Type your message here ..."
+                onChange={(e) => setMsg(e.target.value)}
+                onFocus={(e) => (e.target.placeholder = " ")}
+                onBlur={(e) =>
+                  (e.target.placeholder = "Type your message here ...")
+                }
+                aria-label="message"
+                style={{ height: "200px", width: "180px" }}
+                required
+              ></textarea>
+            </div>
+            <button type="button" className="btn-send" onClick={onSend}>
+              Send
+            </button>
+          </form>
         </div>
       </div>
     </div>
   );
 }
 
-export default home;
+export default Home;
