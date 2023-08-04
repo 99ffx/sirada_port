@@ -15,23 +15,7 @@ import reactJs from "../assests/react.png";
 import scss from "../assests/sass.png";
 import postman from "../assests/postman.png";
 function Home() {
-  const [myemail, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [msg, setMsg] = useState("");
 
-
-
-  const onSend = (myemail) => {
-    console.log(myemail);
-    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if(re.test(myemail)){
-      console.log(myemail,'correct');
-    }else{
-      console.log(myemail,'incorrect')
-    }
-  };
-
-  
   return (
     <div>
       <div className="headline container">
@@ -395,19 +379,20 @@ function Home() {
           </div>
         </div>
 
-        <div className="email-right" style={{ width: "380px" }}>
-          <form className="needs-validation">
+        <form
+          action="mailto:sirada.2635@gmail.com"
+          method="GET"
+          encType="application/x-www-form-urlencoded"
+        >
+          <div className="email-right" style={{ width: "380px" }}>
             <div class="input-group ">
               <input
+              name="subject"
                 type="text"
                 class="form-control"
-                value={subject}
                 placeholder="What’s the topic ?"
-                onChange={(e) => setSubject(e.target.value)}
                 onFocus={(e) => (e.target.placeholder = " ")}
                 onBlur={(e) => (e.target.placeholder = "What’s the topic ?")}
-                aria-label="subject"
-                required
               />
             </div>
 
@@ -415,39 +400,27 @@ function Home() {
               <input
                 type="email"
                 class="form-control"
-                value={myemail}
                 placeholder="What’s your Email ?"
-                onChange={(e) => setEmail(e.target.value)}
                 onFocus={(e) => (e.target.placeholder = " ")}
                 onBlur={(e) => (e.target.placeholder = "What’s the Email ?")}
-                aria-label="sender-email"
-                required
               />
-              <div class="invalid-feedback">Please select a valid state.</div>
             </div>
 
             <div class="input-group" style={{ marginTop: "40px" }}>
               <textarea
-                class="form-control"
-                type="text"
+                name="body"
                 className="form-control"
-                value={msg}
                 placeholder="Type your message here ..."
-                onChange={(e) => setMsg(e.target.value)}
                 onFocus={(e) => (e.target.placeholder = " ")}
                 onBlur={(e) =>
                   (e.target.placeholder = "Type your message here ...")
                 }
-                aria-label="message"
                 style={{ height: "200px", width: "180px" }}
-                required
               ></textarea>
             </div>
-            <button type="button" className="btn-send" onClick={onSend}>
-              Send
-            </button>
-          </form>
-        </div>
+            <input className="btn-send" type="submit" value="Send"></input>
+          </div>
+        </form>
       </div>
     </div>
   );
