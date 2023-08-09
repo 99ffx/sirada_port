@@ -15,9 +15,24 @@ import reactJs from "../assests/react.png";
 import scss from "../assests/sass.png";
 import postman from "../assests/postman.png";
 function Home() {
-
   return (
     <div>
+      <div className="circle">
+        <svg height="1072" width="1072">
+          <circle
+            cx="10"
+            cy="45%"
+            r="50%"
+            fill="none"
+            stroke="#899CA4"
+            style={{
+              mixBlendMode: "soft-light",
+              strokeWidth: "40px",
+              opacity: '10%'
+            }}
+          />
+        </svg>
+        </div>
       <div className="headline container">
         <span style={{ color: "#5C6E75" }}>S</span>
         <span style={{ color: "#5C6E75" }}>I</span>
@@ -75,7 +90,7 @@ function Home() {
         </div>
 
         <div className="breif-context container">
-          <img src={myPic} width="362px" height="488px" alt="" />
+          <img src={myPic} width="284px" height="383px" alt="" />
           <div className="explaination">
             I am a{" "}
             <span style={{ fontStyle: "italic", color: "#96f18e" }}>
@@ -115,7 +130,7 @@ function Home() {
             </p>
             <span
               style={{
-                fontSize: "26px",
+                fontSize: "18px",
               }}
             >
               scroll down <br />
@@ -127,12 +142,29 @@ function Home() {
         </div>
       </div>
       <div className="aboutMe container">
+      <div className="circle2">
+        <svg height="1072" width="1072">
+          <circle
+            cx="10%"
+            cy="610px"
+            r="40%"
+            fill="none"
+            stroke="#899CA4"
+            style={{
+              mixBlendMode: "soft-light",
+              strokeWidth: "40px",
+              opacity: '10%',
+      
+            }}
+          />
+        </svg>
+        </div>
         <div className="aboutMe-wrapper">
           <div className="aboutMe-headline1">ABOUT</div>
           <div className="aboutMe-headline2">ME</div>
         </div>
         <div className="aboutme-context">
-          <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
+          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
             Self-Motivated
           </span>
           <svg
@@ -144,12 +176,19 @@ function Home() {
           >
             <circle cx="8" cy="8" r="8" fill="#29A19C" />
           </svg>
-          <span style={{ color: "#96f18e", fontSize: "40px", padding: "27px" }}>
-            Eager to Learn
+          <span style={{ color: "#96f18e", fontSize: "30px", padding: "27px" }}>
+            Skilled
+            <span className="ms-3" style={{ color: "#FFF " }}>
+              Collaborator
+            </span>
           </span>
           <br />
-          <span style={{ color: "#96f18e", fontSize: "40px", padding: "27px" }}>
-            Proactive
+          <span style={{ color: "#96f18e", fontSize: "30px", padding: "27px" }}>
+            Rapid
+            <span className="ms-3" style={{ color: "#FFF " }}>
+              and
+            </span>{" "}
+            Adaptive
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -160,16 +199,42 @@ function Home() {
           >
             <circle cx="8" cy="8" r="8" fill="#29A19C" />
           </svg>
-          <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
-            Dedicated Team Player
-          </span>
-          <br />
-          <span style={{ color: "#FFF", fontSize: "40px", padding: "27px" }}>
+          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
             Possess
             <span className="ms-3" style={{ color: "#96f18e " }}>
-              Positive{" "}
-            </span>
+              Positive
+            </span>{" "}
             Attitude
+          </span>
+          <br />
+          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
+            Eager to
+            <span className="ms-3" style={{ color: "#96f18e " }}>
+              Learn
+            </span>
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <circle cx="8" cy="8" r="8" fill="#29A19C" />
+          </svg>
+          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
+            Solution
+            <span className="ms-3" style={{ color: "#96f18e " }}>
+              Oriented Professional
+            </span>
+          </span>
+          <br />
+          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
+            Effective
+            <span className="ms-3" style={{ color: "#96f18e " }}>
+              Cross-Functional
+            </span>{" "}
+            Communicator
           </span>
         </div>
       </div>
@@ -182,83 +247,83 @@ function Home() {
         <div className="tech-box">
           <button
             class="btn"
-            style={{ color: "#96F18E", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#96F18E", fontSize: "30px", padding: "19px 45px" }}
           >
             HTML
           </button>
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             CSS
           </button>
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             SCSS
           </button>
           <button
             class="btn"
-            style={{ color: "#96F18E", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#96F18E", fontSize: "30px", padding: "19px 45px" }}
           >
             Node.js
           </button>
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             Figma
           </button>
           <br />
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             Javascript
           </button>
           <button
             class="btn"
-            style={{ color: "#29A19C", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#29A19C", fontSize: "30px", padding: "19px 45px" }}
           >
             Typescript
           </button>
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             Ant Design
           </button>
           <br />
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             Material UI
           </button>
           <button
             class="btn"
-            style={{ color: "#96F18E", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#96F18E", fontSize: "30px", padding: "19px 45px" }}
           >
             State Management
           </button>
           <br />
           <button
             class="btn"
-            style={{ color: "#29A19C", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#29A19C", fontSize: "30px", padding: "19px 45px" }}
           >
             Bootstrap
           </button>
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             Angular
           </button>
           <br />
           <button
             class="btn"
-            style={{ color: "#FFF", fontSize: "40px", padding: "19px 45px" }}
+            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
           >
             React Js
           </button>
@@ -378,7 +443,6 @@ function Home() {
             </div>
           </div>
         </div>
-
         <form
           action="mailto:sirada.2635@gmail.com"
           method="GET"
@@ -387,7 +451,7 @@ function Home() {
           <div className="email-right" style={{ width: "380px" }}>
             <div class="input-group ">
               <input
-              name="subject"
+                name="subject"
                 type="text"
                 class="form-control"
                 placeholder="What’s the topic ?"

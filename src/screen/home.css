@@ -9,6 +9,7 @@
     align-content: center;
     align-items: stretch;
     flex-wrap: nowrap;
+    z-index: 100;
 }
 
 .headline-sub.container {
@@ -69,7 +70,7 @@
 .explaination {
     color: white;
     text-align: center;
-    font-size: 29px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -219,3 +220,18 @@ input.form-control:focus, textarea.form-control:focus{
     align-items: center;
     margin-top: 30px;
 }
+
+.circle{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+}
+.circle2{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    top: 131%;
+    right: 0%;
+    transform: scale3d(-1.5, 1.2, 1.5);
+}
+
