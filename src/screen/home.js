@@ -44,7 +44,7 @@ function Home() {
       <div className="headline-sub container">
         <span className="portfolio">PORTFOLIO</span>
         <span className="ux">UX/UI and Web Development</span>
-        <a href="../assests/Sirada-CV-Euro.pdf" download>
+        <a href="./Sirada-CV-Euro.pdf" download>
           <button type="button" className="btn">
             <div
               className="btn-context"
