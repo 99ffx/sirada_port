@@ -235,3 +235,69 @@ input.form-control:focus, textarea.form-control:focus{
     transform: scale3d(-1.5, 1.2, 1.5);
 }
 
+/* Extra small device */
+@media only screen and (max-width: 600px) {
+    .headline{
+        font-size: 80px;
+        letter-spacing: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio{
+        font-size: 32px;
+        letter-spacing: 17.28px;
+    }
+  
+  }
+  
+  /* Small Device */
+  @media only screen and (min-width: 600px) {
+    .headline{
+        font-size: 100px;
+        letter-spacing: 0px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  /* Medium Device */
+  @media only screen and (min-width: 768px) {
+    .headline{
+        font-size: 160px;
+        letter-spacing: 26px;
+        display: flex;
+        justify-content: center;
+    }
+   
+  }
+  
+  /* Large device */
+  @media only screen and (min-width: 992px) {
+    .headline{
+        font-size: 190px;
+        letter-spacing: 39px;
+        display: flex;
+        justify-content: center;
+    }
+    
+  }
+  
+  /* Extra Large Device */
+  @media only screen and (min-width: 1200px) {
+    .headline{
+        font-size: 190px;
+        letter-spacing: 50px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    .headline{
+        font-size: 210px;
+        letter-spacing: 88px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  

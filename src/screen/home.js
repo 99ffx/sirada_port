@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
@@ -17,7 +17,7 @@ import postman from "../assests/postman.png";
 function Home() {
   return (
     <div>
-      <div className="circle">
+      {/* <div className="circle">
         <svg height="1072" width="1072">
           <circle
             cx="10"
@@ -32,7 +32,7 @@ function Home() {
             }}
           />
         </svg>
-        </div>
+        </div> */}
       <div className="headline container">
         <span style={{ color: "#5C6E75" }}>S</span>
         <span style={{ color: "#5C6E75" }}>I</span>
@@ -44,7 +44,7 @@ function Home() {
       <div className="headline-sub container">
         <span className="portfolio">PORTFOLIO</span>
         <span className="ux">UX/UI and Web Development</span>
-        <a href="./Sirada-CV-Euro.pdf" download>
+        <a href="./Sirada_CV.pdf" download>
           <button type="button" className="btn">
             <div
               className="btn-context"
@@ -142,7 +142,7 @@ function Home() {
         </div>
       </div>
       <div className="aboutMe container">
-      <div className="circle2">
+      {/* <div className="circle2">
         <svg height="1072" width="1072">
           <circle
             cx="10%"
@@ -158,7 +158,7 @@ function Home() {
             }}
           />
         </svg>
-        </div>
+        </div> */}
         <div className="aboutMe-wrapper">
           <div className="aboutMe-headline1">ABOUT</div>
           <div className="aboutMe-headline2">ME</div>
