@@ -33,50 +33,35 @@ function Home() {
           />
         </svg>
         </div> */}
-      <div className="headline container">
-        <span style={{ color: "#5C6E75" }}>S</span>
-        <span style={{ color: "#5C6E75" }}>I</span>
-        <span style={{ color: "#29A19C" }}>R</span>
-        <span style={{ color: "#5C6E75" }}>A</span>
-        <span style={{ color: "#29A19C" }}>D</span>
-        <span style={{ color: "#5C6E75" }}>A</span>
-      </div>
+
       <div className="headline-sub container">
-        <span className="portfolio">PORTFOLIO</span>
-        <span className="ux">UX/UI and Web Development</span>
+        <div className="headline container">
+          <span style={{ color: "#5C6E75" }}>S</span>
+          <span style={{ color: "#5C6E75" }}>i</span>
+          <span style={{ color: "#29A19C" }}>R</span>
+          <span style={{ color: "#5C6E75" }}>A</span>
+          <span style={{ color: "#29A19C" }}>D</span>
+          <span style={{ color: "#5C6E75" }}>A</span>
+        </div>
+        <span className="portfolio">PORTFOLiO</span>
+        <span className="ux">Medical Imaging and Web Development</span>
         <a href="./Sirada_CV.pdf" download>
           <button type="button" className="btn">
             <div
               className="btn-context"
-              style={{
-                padding: "20px",
-                display: "grid",
-                gridAutoFlow: "column",
-              }}
             >
               <span
                 className="download me-3"
-                style={{
-                  color: "#5C6E75",
-                  fontWeight: "500",
-                  fontSize: "36px",
-                }}
               >
                 Download
               </span>
               <span
                 className="cv"
-                style={{ color: "black", fontWeight: "600", fontSize: "36px" }}
               >
                 CV
               </span>
               <i
                 className="bi bi-box-arrow-up-right"
-                style={{
-                  fontSize: "2.3em",
-                  marginLeft: "18px",
-                  color: "#5C6E75",
-                }}
               ></i>
             </div>
           </button>
@@ -142,7 +127,7 @@ function Home() {
         </div>
       </div>
       <div className="aboutMe container">
-      {/* <div className="circle2">
+        {/* <div className="circle2">
         <svg height="1072" width="1072">
           <circle
             cx="10%"
