@@ -87,13 +87,60 @@
   margin-top: 90px;
   grid-gap: 60px;
   justify-content: center;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.breif-context img {
+  width: 332px;
+  height: 449px;
+  border-radius: 18px;
 }
 
 .explaination {
+  text-align: justify;
+  padding: 20px;
   color: white;
   text-align: center;
-  font-size: 20px;
+  line-height: 35px;
+  font-size: 18px;
   font-weight: 300;
+  border: 1px solid #ffffff30;
+  border-radius: 24px;
+}
+
+.motto {
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  border-radius: 58px 0px;
+  margin-top: 66px;
+  padding: 37px 10px;
+}
+
+.motto .bi1 {
+  color: #384249d1;
+  font-size: 5em;
+  position: absolute;
+  left: 11%;
+  z-index: -1;
+  margin-top: -36px;
+}
+
+.motto .bi2 {
+  color: #384249d1;
+  font-size: 5em;
+  position: absolute;
+  right: 11%;
+  z-index: -1;
+  margin-top: -36px;
+}
+
+.motto h3 {
+  height: 20px;
 }
 
 .aboutMe-wrapper {
@@ -286,6 +333,25 @@ textarea.form-control:focus {
   .btn-context .bi {
     font-size: 1.9em;
   }
+  .hello {
+    font-size: 35px;
+  }
+  .sirada {
+    font-size: 35px;
+  }
+  .breif-context {
+    grid-auto-flow: row;
+    margin-top: 29px;
+    grid-gap: 34px;
+  }
+  .explaination {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .breif-context img {
+    width: 307px;
+    height: 423px;
+  }
 }
 
 @media screen and (min-device-width: 768px) {
@@ -317,6 +383,15 @@ textarea.form-control:focus {
   .btn-context .bi {
     font-size: 2em;
   }
+  .breif-context {
+    grid-auto-flow: row;
+    margin-top: 29px;
+    grid-gap: 34px;
+  }
+  .explaination {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 @media screen and (min-device-width: 1200px) {
@@ -327,11 +402,11 @@ textarea.form-control:focus {
     justify-content: center;
   }
   .portfolio {
-    font-size: 107px;
+    font-size: 100px;
     letter-spacing: 20px;
   }
   .ux {
-    font-size: 40px;
+    font-size: 30px;
   }
   .btn-context {
     padding: 18px 25px;
@@ -344,6 +419,15 @@ textarea.form-control:focus {
   }
   .btn-context .bi {
     font-size: 2.3em;
+  }
+  .breif-context {
+    grid-auto-flow: column;
+    margin-top: 40px;
+    grid-gap: 40px;
+  }
+  .explaination {
+    font-size: 18px;
+    line-height: 33px;
   }
 }
 
@@ -358,9 +442,20 @@ textarea.form-control:focus {
 
 @media screen and (min-device-width: 1400px) {
   .headline {
-    font-size: 250px;
+    font-size: 200px;
     letter-spacing: 50px;
     display: flex;
     justify-content: center;
+  }
+
+  .breif-context {
+    grid-auto-flow: column;
+    margin-top: 40px;
+    grid-gap: 50px;
+  }
+
+  .explaination {
+    font-size: 20px;
+    line-height: 33px;
   }
 }

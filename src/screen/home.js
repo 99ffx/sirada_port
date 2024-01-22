@@ -14,6 +14,8 @@ import nodeJs from "../assests/node.png";
 import reactJs from "../assests/react.png";
 import scss from "../assests/sass.png";
 import postman from "../assests/postman.png";
+import TypeIt from "typeit-react";
+
 function Home() {
   return (
     <div>
@@ -47,22 +49,10 @@ function Home() {
         <span className="ux">Medical Imaging and Web Development</span>
         <a href="./Sirada_CV.pdf" download>
           <button type="button" className="btn">
-            <div
-              className="btn-context"
-            >
-              <span
-                className="download me-3"
-              >
-                Download
-              </span>
-              <span
-                className="cv"
-              >
-                CV
-              </span>
-              <i
-                className="bi bi-box-arrow-up-right"
-              ></i>
+            <div className="btn-context">
+              <span className="download me-3">Download</span>
+              <span className="cv">CV</span>
+              <i className="bi bi-box-arrow-up-right"></i>
             </div>
           </button>
         </a>
@@ -71,18 +61,17 @@ function Home() {
       <div className="breif container" style={{ marginTop: "51px" }}>
         <div className="brief-headline">
           <span className="hello">HEY, I’M </span>
-          <span className="sirada">SIRADA</span>
+          <span className="sirada">SiRADA</span>
         </div>
 
         <div className="breif-context container">
-          <img src={myPic} width="284px" height="383px" alt="" />
           <div className="explaination">
             I am a{" "}
             <span style={{ fontStyle: "italic", color: "#96f18e" }}>
               Front End Developer
             </span>{" "}
-            from Thailand <br /> With the industry experiences. I have passion{" "}
-            <br /> in Web Application {""}
+            from Thailand With the industry experiences. I have passion in Web
+            Application {""}
             <span style={{ fontStyle: "italic", color: "#96f18e" }}>
               Programming
             </span>{" "}
@@ -90,42 +79,51 @@ function Home() {
             <span style={{ fontStyle: "italic", color: "#96f18e" }}>
               Designing
             </span>
-            .<br /> Moreover I’m keen on learning about Internet of Thing.
-            <br />
-            <span
-              style={{
-                fontSize: "36px",
-                lineHeight: "112%",
-                fontWeight: "800",
-              }}
-            >
-              .<br />
-              .
-              <br />.
-              <br />
-            </span>
-            <p
-              style={{
-                fontSize: "36px",
-                lineHeight: "112%",
-                fontWeight: "400",
-              }}
-            >
-              v
-            </p>
-            <span
-              style={{
-                fontSize: "18px",
-              }}
-            >
-              scroll down <br />
-              to
-              <br />
-              know me more !
-            </span>
+            . Currently on a thrilling journey pursuing a{" "}
+            <span style={{ fontStyle: "italic", color: "#96f18e" }}>
+              Master's Degree in Medical Imaging and Applications,
+            </span>{" "}
+            I'm driven by the vision of leveraging cutting-edge technology to
+            elevate the standards of Computer-Aided Diagnosis.
+          </div>
+          <img src={myPic} alt="" />
+          <div className="explaination">
+            As a proactive and initiative-driven individual, I thrive on
+            initiating and completing tasks ahead of schedule. My experience
+            working and studying in multicultural settings has equipped me with
+            strong communication skills and the ability resolve conflicts
+            seamlessly. I bring a commitment to lifelong learning, ensuring I
+            stay at the forefront of advancements in my field.
           </div>
         </div>
+
+        <div className="motto">
+          <i class="bi1 bi-asterisk"></i>
+          <i class="bi2 bi-asterisk"></i>
+          <TypeIt
+            as={"h3"}
+            options={{
+              strings: [
+                ". . . I am a Dedicated and Adaptable Team Player",
+                "who is always eager to take on new challenges ",
+                "and embrace continuous growth. . .",
+              ],
+              speed: 70,
+              loop: true,
+              waitUntilVisible: true,
+            }}
+          />
+
+          <p id="mottoTypeIt"></p>
+        </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr style={{ marginTop: "70px", opacity: "1", color: "white" }} />
+
       <div className="aboutMe container">
         {/* <div className="circle2">
         <svg height="1072" width="1072">
