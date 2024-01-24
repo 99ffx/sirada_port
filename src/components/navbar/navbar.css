@@ -86,11 +86,11 @@
 }
 @media screen and (min-device-width: 1200px) {
   .headline-left {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media screen and (min-device-width: 1201px) {
   .headline-left {
-    font-size: 50px;
+    font-size: 40px;
   }
 }

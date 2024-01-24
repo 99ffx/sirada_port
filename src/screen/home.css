@@ -91,6 +91,10 @@
   align-items: stretch;
 }
 
+.breif-headline{
+  text-align: center;
+}
+
 .breif-context img {
   width: 332px;
   height: 449px;
@@ -98,11 +102,10 @@
 }
 
 .explaination {
-  text-align: justify;
+  text-align: justify !important;
   padding: 20px;
   color: white;
   text-align: center;
-  line-height: 35px;
   font-size: 18px;
   font-weight: 300;
   border: 1px solid #ffffff30;
@@ -144,7 +147,7 @@
 }
 
 .aboutMe-wrapper {
-  margin-top: 169px;
+  margin-top: 120px;
   display: block;
 }
 
@@ -165,11 +168,26 @@
 }
 
 .aboutme-context {
-  display: block;
   text-align: center;
   margin-top: 60px;
-  line-height: 4.3em;
+  color: #FFF;
+  display: grid;
+  /* grid-auto-flow: row; */
+  grid-gap: 2.5em 29px;
+  font-size: 28px;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  
 }
+
+.aboutme-context span{
+  width: 100%;
+  padding: 30px 45px;
+  border-radius: 24px;
+  height: 110%;
+  background: linear-gradient(142deg, rgba(92,110,117,1) 0%, rgba(39,50,58,1) 48%); 
+}
+
 
 .techstack-headline {
   color: #fff;
@@ -318,7 +336,7 @@ textarea.form-control:focus {
     font-size: 32px;
     letter-spacing: 6.28px;
   }
-  .ux {
+  .ux{
     font-size: 18px;
   }
   .btn-context {
@@ -351,6 +369,29 @@ textarea.form-control:focus {
   .breif-context img {
     width: 307px;
     height: 423px;
+  }
+.motto .bi2 {
+    font-size: 4em;
+    right: 5%;
+  }
+  .motto .bi1 {
+    font-size: 4em;
+    left: 5%;
+  }
+  .aboutMe-headline1, .aboutMe-headline2{
+    font-size: 100px;
+    margin-top: -24%;
+  }
+  .aboutMe-wrapper {
+    margin-top: 140px;
+  }
+  .aboutme-context{
+    font-size: 18px;
+    grid-template: none;
+  }
+  .aboutme-context span{
+    width: 76%;
+    padding: 10px;
   }
 }
 
@@ -392,6 +433,15 @@ textarea.form-control:focus {
     font-size: 16px;
     line-height: 25px;
   }
+ 
+  .aboutme-context span{
+    width: 88%;
+    padding: 19px 30px;
+    font-size: 20px;
+  }
+  .aboutme-context{
+    grid-gap: 1.5em 29px;
+  }
 }
 
 @media screen and (min-device-width: 1200px) {
@@ -429,6 +479,13 @@ textarea.form-control:focus {
     font-size: 18px;
     line-height: 33px;
   }
+  .aboutme-context span{
+    width: 100%;
+    font-size: 28px;
+  }
+  .aboutme-context{
+    grid-gap: 2.5em 29px;
+  }
 }
 
 /* @media screen and (min-device-width: 1201px) {
@@ -457,5 +514,8 @@ textarea.form-control:focus {
   .explaination {
     font-size: 20px;
     line-height: 33px;
+  }
+  .aboutme-context{
+    grid-gap: 2.5em 5em;
   }
 }

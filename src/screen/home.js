@@ -59,7 +59,7 @@ function Home() {
       </div>
       <hr style={{ marginTop: "70px", opacity: "1", color: "white" }} />
       <div className="breif container" style={{ marginTop: "51px" }}>
-        <div className="brief-headline">
+        <div className="breif-headline">
           <span className="hello">HEY, I’M </span>
           <span className="sirada">SiRADA</span>
         </div>
@@ -146,79 +146,15 @@ function Home() {
           <div className="aboutMe-headline1">ABOUT</div>
           <div className="aboutMe-headline2">ME</div>
         </div>
+        
         <div className="aboutme-context">
-          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
-            Self-Motivated
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <circle cx="8" cy="8" r="8" fill="#29A19C" />
-          </svg>
-          <span style={{ color: "#96f18e", fontSize: "30px", padding: "27px" }}>
-            Skilled
-            <span className="ms-3" style={{ color: "#FFF " }}>
-              Collaborator
-            </span>
-          </span>
-          <br />
-          <span style={{ color: "#96f18e", fontSize: "30px", padding: "27px" }}>
-            Rapid
-            <span className="ms-3" style={{ color: "#FFF " }}>
-              and
-            </span>{" "}
-            Adaptive
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <circle cx="8" cy="8" r="8" fill="#29A19C" />
-          </svg>
-          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
-            Possess
-            <span className="ms-3" style={{ color: "#96f18e " }}>
-              Positive
-            </span>{" "}
-            Attitude
-          </span>
-          <br />
-          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
-            Eager to
-            <span className="ms-3" style={{ color: "#96f18e " }}>
-              Learn
-            </span>
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <circle cx="8" cy="8" r="8" fill="#29A19C" />
-          </svg>
-          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
-            Solution
-            <span className="ms-3" style={{ color: "#96f18e " }}>
-              Oriented Professional
-            </span>
-          </span>
-          <br />
-          <span style={{ color: "#FFF", fontSize: "30px", padding: "27px" }}>
-            Effective
-            <span className="ms-3" style={{ color: "#96f18e " }}>
-              Cross-Functional
-            </span>{" "}
-            Communicator
-          </span>
+          <span className="item1"><i class="bi bi-person-heart" style={{color:"#96f18e"}}></i><br />Self-Motivated</span>
+          <span className="item2"><i class="bi bi-arrow-left-right" style={{color:"#96f18e"}}></i><br />Rapid and Adaptive</span>
+          <span className="item3"><i class="bi bi-plus-circle-fill" style={{color:"#96f18e"}}></i><br />Possess Positive Attitude</span>
+          <span className="item4"><i class="bi bi-book-fill" style={{color:"#96f18e"}}></i><br />Eager to Learn</span>
+          <span className="item5"><i class="bi bi-award-fill" style={{color:"#96f18e"}}></i><br />Solution Oriented Professional</span>
+          <span className="item6"><i class="bi bi-chat-square-quote-fill" style={{color:"#96f18e"}}></i><br />Effective Cross Functional Communicator</span>
+
         </div>
       </div>
       <div className="techstack container">
