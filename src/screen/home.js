@@ -15,8 +15,10 @@ import reactJs from "../assests/react.png";
 import scss from "../assests/sass.png";
 import postman from "../assests/postman.png";
 import TypeIt from "typeit-react";
+import { useMediaQuery } from "react-responsive";
 
 function Home() {
+  const isMobile = useMediaQuery({  query: '(max-width: 480px)' })
   return (
     <div>
       {/* <div className="circle">
@@ -146,15 +148,41 @@ function Home() {
           <div className="aboutMe-headline1">ABOUT</div>
           <div className="aboutMe-headline2">ME</div>
         </div>
-        
-        <div className="aboutme-context">
-          <span className="item1"><i class="bi bi-person-heart" style={{color:"#96f18e"}}></i><br />Self-Motivated</span>
-          <span className="item2"><i class="bi bi-arrow-left-right" style={{color:"#96f18e"}}></i><br />Rapid and Adaptive</span>
-          <span className="item3"><i class="bi bi-plus-circle-fill" style={{color:"#96f18e"}}></i><br />Possess Positive Attitude</span>
-          <span className="item4"><i class="bi bi-book-fill" style={{color:"#96f18e"}}></i><br />Eager to Learn</span>
-          <span className="item5"><i class="bi bi-award-fill" style={{color:"#96f18e"}}></i><br />Solution Oriented Professional</span>
-          <span className="item6"><i class="bi bi-chat-square-quote-fill" style={{color:"#96f18e"}}></i><br />Effective Cross Functional Communicator</span>
 
+        <div className="aboutme-context">
+          <span className="item1">
+            <i class="bi bi-person-heart" style={{ color: "#96f18e" }}></i>
+            <br />
+            Self-Motivated
+          </span>
+          <span className="item2">
+            <i class="bi bi-arrow-left-right" style={{ color: "#96f18e" }}></i>
+            <br />
+            Rapid and Adaptive
+          </span>
+          <span className="item3">
+            <i class="bi bi-plus-circle-fill" style={{ color: "#96f18e" }}></i>
+            <br />
+            Possess Positive Attitude
+          </span>
+          <span className="item4">
+            <i class="bi bi-book-fill" style={{ color: "#96f18e" }}></i>
+            <br />
+            Eager to Learn
+          </span>
+          <span className="item5">
+            <i class="bi bi-award-fill" style={{ color: "#96f18e" }}></i>
+            <br />
+            Solution Oriented Professional
+          </span>
+          <span className="item6">
+            <i
+              class="bi bi-chat-square-quote-fill"
+              style={{ color: "#96f18e" }}
+            ></i>
+            <br />
+            Effective Cross Functional Communicator
+          </span>
         </div>
       </div>
       <div className="techstack container">
@@ -163,91 +191,7 @@ function Home() {
           <span style={{ color: "#29A19C" }}>/</span>
           <span>STACK</span>
         </div>
-        <div className="tech-box">
-          <button
-            class="btn"
-            style={{ color: "#96F18E", fontSize: "30px", padding: "19px 45px" }}
-          >
-            HTML
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            CSS
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            SCSS
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#96F18E", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Node.js
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Figma
-          </button>
-          <br />
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Javascript
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#29A19C", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Typescript
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Ant Design
-          </button>
-          <br />
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Material UI
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#96F18E", fontSize: "30px", padding: "19px 45px" }}
-          >
-            State Management
-          </button>
-          <br />
-          <button
-            class="btn"
-            style={{ color: "#29A19C", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Bootstrap
-          </button>
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            Angular
-          </button>
-          <br />
-          <button
-            class="btn"
-            style={{ color: "#FFF", fontSize: "30px", padding: "19px 45px" }}
-          >
-            React Js
-          </button>
-        </div>
-        <div className="tech-logo">
+        {isMobile && <div className="tech-logo">
           <img src={htmlLogo} alt="" width="69px" height="69px" />
           <img src={cssLogo} alt="css logo" width="69px" height="69px" />
           <img src={jsLogo} alt="" width="69px" height="69px" />
@@ -265,7 +209,91 @@ function Home() {
             class="bi bi-bootstrap-fill"
             style={{ fontSize: "69px", color: "#6f42c1" }}
           ></i>
-        </div>
+        </div>}
+        {!isMobile && <div className="tech-box">
+          <button
+            class="btn"
+          >
+            HTML
+          </button>
+          <button
+            class="btn"
+          >
+            CSS
+          </button>
+          <button
+            class="btn"
+          >
+            SCSS
+          </button>
+          <button
+            class="btn"
+          >
+            Node.js
+          </button>
+          <button
+            class="btn"
+          >
+            Figma
+          </button>
+          <button
+            class="btn"
+          >
+            Javascript
+          </button>
+          <button
+            class="btn"
+          >
+            Typescript
+          </button>
+          <button
+            class="btn"
+          >
+            Ant Design
+          </button>
+          <button
+            class="btn"
+          >
+            Material UI
+          </button>
+          <button
+            class="btn"
+          >
+            State Management
+          </button>
+          <button
+            class="btn"
+          >
+            Bootstrap
+          </button>
+          <button
+            class="btn"
+          >
+            Angular
+          </button>
+          <button
+            class="btn"
+          >
+            React Js
+          </button>
+        </div>}
+        {!isMobile && <div className="tech-logo">
+          <img src={htmlLogo} alt="" width="69px" height="69px" />
+          <img src={cssLogo} alt="css logo" width="69px" height="69px" />
+          <img src={jsLogo} alt="" width="69px" height="69px" />
+          <img src={tsLogo} alt="" width="69px" height="69px" />
+          <img src={scss} alt="" width="69px" height="69px" />
+          <img src={angular} alt="" width="69px" height="69px" />
+          <img src={reactJs} alt="" width="69px" height="69px" />
+          <img src={nodeJs} alt="" width="69px" height="69px" />
+          <img src={postman} alt="" width="69px" height="69px" />
+          <img src={git} alt="" width="69px" height="69px" />
+          <img src={github} alt="" width="69px" height="69px" />
+          <img src={figma} alt="" width="66px" height="66px" />
+          <img src={materialUI} alt="" width="69px" height="69px" />
+          
+        </div>}
+        
       </div>
       <div className="connect container">
         <div className="headline-left">
