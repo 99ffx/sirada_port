@@ -18,7 +18,7 @@ import TypeIt from "typeit-react";
 import { useMediaQuery } from "react-responsive";
 
 function Home() {
-  const isMobile = useMediaQuery({  query: '(max-width: 480px)' })
+  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
   return (
     <div>
       {/* <div className="circle">
@@ -191,109 +191,61 @@ function Home() {
           <span style={{ color: "#29A19C" }}>/</span>
           <span>STACK</span>
         </div>
-        {isMobile && <div className="tech-logo">
-          <img src={htmlLogo} alt="" width="69px" height="69px" />
-          <img src={cssLogo} alt="css logo" width="69px" height="69px" />
-          <img src={jsLogo} alt="" width="69px" height="69px" />
-          <img src={tsLogo} alt="" width="69px" height="69px" />
-          <img src={scss} alt="" width="69px" height="69px" />
-          <img src={angular} alt="" width="69px" height="69px" />
-          <img src={reactJs} alt="" width="69px" height="69px" />
-          <img src={nodeJs} alt="" width="69px" height="69px" />
-          <img src={postman} alt="" width="69px" height="69px" />
-          <img src={git} alt="" width="69px" height="69px" />
-          <img src={github} alt="" width="69px" height="69px" />
-          <img src={figma} alt="" width="66px" height="66px" />
-          <img src={materialUI} alt="" width="69px" height="69px" />
-          <i
-            class="bi bi-bootstrap-fill"
-            style={{ fontSize: "69px", color: "#6f42c1" }}
-          ></i>
-        </div>}
-        {!isMobile && <div className="tech-box">
-          <button
-            class="btn"
-          >
-            HTML
-          </button>
-          <button
-            class="btn"
-          >
-            CSS
-          </button>
-          <button
-            class="btn"
-          >
-            SCSS
-          </button>
-          <button
-            class="btn"
-          >
-            Node.js
-          </button>
-          <button
-            class="btn"
-          >
-            Figma
-          </button>
-          <button
-            class="btn"
-          >
-            Javascript
-          </button>
-          <button
-            class="btn"
-          >
-            Typescript
-          </button>
-          <button
-            class="btn"
-          >
-            Ant Design
-          </button>
-          <button
-            class="btn"
-          >
-            Material UI
-          </button>
-          <button
-            class="btn"
-          >
-            State Management
-          </button>
-          <button
-            class="btn"
-          >
-            Bootstrap
-          </button>
-          <button
-            class="btn"
-          >
-            Angular
-          </button>
-          <button
-            class="btn"
-          >
-            React Js
-          </button>
-        </div>}
-        {!isMobile && <div className="tech-logo">
-          <img src={htmlLogo} alt="" width="69px" height="69px" />
-          <img src={cssLogo} alt="css logo" width="69px" height="69px" />
-          <img src={jsLogo} alt="" width="69px" height="69px" />
-          <img src={tsLogo} alt="" width="69px" height="69px" />
-          <img src={scss} alt="" width="69px" height="69px" />
-          <img src={angular} alt="" width="69px" height="69px" />
-          <img src={reactJs} alt="" width="69px" height="69px" />
-          <img src={nodeJs} alt="" width="69px" height="69px" />
-          <img src={postman} alt="" width="69px" height="69px" />
-          <img src={git} alt="" width="69px" height="69px" />
-          <img src={github} alt="" width="69px" height="69px" />
-          <img src={figma} alt="" width="66px" height="66px" />
-          <img src={materialUI} alt="" width="69px" height="69px" />
-          
-        </div>}
-        
+        {isMobile && (
+          <div className="tech-logo">
+            <img src={htmlLogo} alt="" width="69px" height="69px" />
+            <img src={cssLogo} alt="css logo" width="69px" height="69px" />
+            <img src={jsLogo} alt="" width="69px" height="69px" />
+            <img src={tsLogo} alt="" width="69px" height="69px" />
+            <img src={scss} alt="" width="69px" height="69px" />
+            <img src={angular} alt="" width="69px" height="69px" />
+            <img src={reactJs} alt="" width="69px" height="69px" />
+            <img src={nodeJs} alt="" width="69px" height="69px" />
+            <img src={postman} alt="" width="69px" height="69px" />
+            <img src={git} alt="" width="69px" height="69px" />
+            <img src={github} alt="" width="69px" height="69px" />
+            <img src={figma} alt="" width="66px" height="66px" />
+            <img src={materialUI} alt="" width="69px" height="69px" />
+            <i
+              class="bi bi-bootstrap-fill"
+              style={{ fontSize: "69px", color: "#6f42c1" }}
+            ></i>
+          </div>
+        )}
+        {!isMobile && (
+          <div className="tech-box">
+            <button class="btn">HTML</button>
+            <button class="btn">CSS</button>
+            <button class="btn">SCSS</button>
+            <button class="btn">Node.js</button>
+            <button class="btn">Figma</button>
+            <button class="btn">Javascript</button>
+            <button class="btn">Typescript</button>
+            <button class="btn">Ant Design</button>
+            <button class="btn">Material UI</button>
+            <button class="btn">State Management</button>
+            <button class="btn">Bootstrap</button>
+            <button class="btn">Angular</button>
+            <button class="btn">React Js</button>
+          </div>
+        )}
+        {!isMobile && (
+          <div className="tech-logo">
+            <img src={htmlLogo} alt="" width="69px" height="69px" />
+            <img src={cssLogo} alt="css logo" width="69px" height="69px" />
+            <img src={jsLogo} alt="" width="69px" height="69px" />
+            <img src={tsLogo} alt="" width="69px" height="69px" />
+            <img src={scss} alt="" width="69px" height="69px" />
+            <img src={angular} alt="" width="69px" height="69px" />
+            <img src={reactJs} alt="" width="69px" height="69px" />
+            <img src={nodeJs} alt="" width="69px" height="69px" />
+            <img src={postman} alt="" width="69px" height="69px" />
+            <img src={git} alt="" width="69px" height="69px" />
+            <img src={github} alt="" width="69px" height="69px" />
+            <img src={figma} alt="" width="66px" height="66px" />
+            <img src={materialUI} alt="" width="69px" height="69px" />
+          </div>
+        )}
       </div>
       <div className="connect container">
         <div className="headline-left">
@@ -302,33 +254,9 @@ function Home() {
             <span style={{ color: "#29A19C" }}>s</span>
             <br />
             <div className="connect-sub" style={{ marginTop: "10px" }}>
-              <span
-                style={{
-                  color: "#FFF",
-                  fontSize: "120px",
-                  letterSpacing: "-11.2px",
-                }}
-              >
-                Co
-              </span>
-              <span
-                style={{
-                  color: "#FFF",
-                  fontSize: "120px",
-                  letterSpacing: "-11.2px",
-                }}
-              >
-                nn
-              </span>
-              <span
-                style={{
-                  color: "#96F18E",
-                  fontSize: "120px",
-                  letterSpacing: "-11.2px",
-                }}
-              >
-                ect
-              </span>
+              <span style={{ color: "#FFF" }}>Co</span>
+              <span style={{ color: "#FFF" }}>n</span>
+              <span>nect</span>
             </div>
           </div>
           <span style={{ fontWeight: "400", marginTop: "27px" }}>
@@ -336,34 +264,18 @@ function Home() {
           </span>
           <br />
           <div className="getInTouch">
-            <a href="./Sirada-CV-Euro.pdf" download>
+            <a href="./Sirada_CV.pdf" download>
               <button type="button" className="btn-download">
                 <div
                   className="btn-context"
-                  style={{
-                    padding: "10px 13px",
-                    display: "grid",
-                    gridAutoFlow: "column",
-                    alignItems: "center",
-                  }}
                 >
                   <span
                     className="download me-3"
-                    style={{
-                      color: "#5C6E75",
-                      fontWeight: "500",
-                      fontSize: "25px",
-                    }}
                   >
                     Download
                   </span>
                   <span
                     className="cv"
-                    style={{
-                      color: "black",
-                      fontWeight: "600",
-                      fontSize: "25px",
-                    }}
                   >
                     CV
                   </span>
