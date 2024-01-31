@@ -91,7 +91,7 @@
   align-items: stretch;
 }
 
-.breif-headline{
+.breif-headline {
   text-align: center;
 }
 
@@ -170,24 +170,26 @@
 .aboutme-context {
   text-align: center;
   margin-top: 60px;
-  color: #FFF;
+  color: #fff;
   display: grid;
   /* grid-auto-flow: row; */
   grid-gap: 2.5em 29px;
   font-size: 28px;
   grid-template-columns: auto auto auto;
   justify-items: center;
-  
 }
 
-.aboutme-context span{
+.aboutme-context span {
   width: 100%;
   padding: 30px 45px;
   border-radius: 24px;
   height: 110%;
-  background: linear-gradient(142deg, rgba(92,110,117,1) 0%, rgba(39,50,58,1) 48%); 
+  background: linear-gradient(
+    142deg,
+    rgba(92, 110, 117, 1) 0%,
+    rgba(39, 50, 58, 1) 48%
+  );
 }
-
 
 .techstack-headline {
   color: #fff;
@@ -206,12 +208,12 @@
   border-width: 2px;
   border-radius: 52px;
   margin: 17px;
-  color: #96F18E; 
+  color: #96f18e;
   font-size: 30px;
   padding: 19px 45px;
 }
 
-.tech-box .btn:hover{
+.tech-box .btn:hover {
   border-color: #29a19c;
   color: #f5f5f5;
 }
@@ -241,10 +243,9 @@
 input.form-control,
 textarea.form-control {
   background-color: #27323a;
-  border-radius: 0 !important;
+  border-radius: 10px;
   border: 3px solid #96f18e;
   color: white;
-  width: 130%;
   text-align: center;
   font-size: 16px;
 }
@@ -329,17 +330,17 @@ textarea.form-control:focus {
   right: 0%;
   transform: scale3d(-1.5, 1.2, 1.5);
 }
-.connect-sub{
-  color: #96F18E;
+.connect-sub {
+  color: #96f18e;
   font-size: 120px;
   letter-spacing: -11.2px;
 }
-.btn-context{
+.btn-context {
   padding: 10px 13px;
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  color: #5C6E75;
+  color: #5c6e75;
   font-weight: 500;
   font-size: 25px;
 }
@@ -358,7 +359,7 @@ textarea.form-control:focus {
     font-size: 32px;
     letter-spacing: 6.28px;
   }
-  .ux{
+  .ux {
     font-size: 18px;
   }
   .hello {
@@ -380,7 +381,7 @@ textarea.form-control:focus {
     width: 307px;
     height: 423px;
   }
-.motto .bi2 {
+  .motto .bi2 {
     font-size: 4em;
     right: 5%;
   }
@@ -388,52 +389,64 @@ textarea.form-control:focus {
     font-size: 4em;
     left: 5%;
   }
-  .aboutMe-headline1, .aboutMe-headline2{
+  .aboutMe-headline1,
+  .aboutMe-headline2 {
     font-size: 100px;
     margin-top: -24%;
   }
   .aboutMe-wrapper {
     margin-top: 140px;
   }
-  .aboutme-context{
+  .aboutme-context {
     font-size: 18px;
     grid-template: none;
   }
-  .aboutme-context span{
+  .aboutme-context span {
     width: 76%;
     padding: 10px;
   }
-  .techstack-headline span{
+  .techstack-headline span {
     font-size: 59px;
   }
-  .tech-logo{
+  .tech-logo {
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
     margin-top: 60px;
   }
-  .tech-logo img{
-  width: 59px;
-  height: 59px;
+  .tech-logo img {
+    width: 59px;
+    height: 59px;
   }
-  .connect{
+  .connect {
     display: contents;
-    
   }
-  .connect-headline{
+  .connect-headline {
     font-size: 70px;
-    margin-top: 60px;
   }
-  .connect-sub{
+  .connect-sub {
     font-size: 70px;
     letter-spacing: -3.2px;
   }
-  .btn-context{
+  .btn-context {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+  .btn-context .download,
+  .btn-context .cv {
     font-size: 20px;
-    padding: 1px 8px;
   }
-  .linkedin{
-    font-size: 1em;
+  .linkedin {
+    font-size: 0.9em;
   }
+  .email-right {
+    margin-top: 80px;
+    width: 340px;
+    display: inline-block;
+  }
+  /* input.form-control,
+textarea.form-control {
+  width: 89%;
+} */
 }
 
 @media screen and (min-device-width: 768px) {
@@ -453,58 +466,57 @@ textarea.form-control:focus {
   .ux {
     font-size: 35px;
   }
-  .btn-context {
-    /* padding: 11px 18px; */
-  }
-  .btn-context .download {
-    font-size: 26px;
-  }
-  .btn-context .cv {
-    font-size: 28px;
-  }
-  .btn-context .bi {
-    font-size: 2em;
-  }
-  .breif-context {
-    grid-auto-flow: row;
-    margin-top: 29px;
-    grid-gap: 34px;
-  }
   .explaination {
     font-size: 16px;
     line-height: 25px;
   }
- 
-  .aboutme-context span{
+
+  .aboutme-context span {
     width: 88%;
     padding: 19px 30px;
     font-size: 20px;
   }
-  .aboutme-context{
+  .aboutme-context {
     grid-gap: 1.5em 29px;
   }
-  .tech-box .btn{
+  .tech-box .btn {
     font-size: 23px;
     margin: 5px;
   }
-  .tech-logo img{
+  .tech-logo img {
     width: 49px;
     height: 49px;
-    }
-  .tech-logo{
+  }
+  .tech-logo {
     grid-gap: 12px;
     width: 100%;
   }
-  .connect-headline{
+  .connect-headline {
     font-size: 90px;
     margin-top: 60px;
   }
-  .connect-sub{
+  .connect-sub {
     font-size: 90px;
     letter-spacing: -10.2px;
   }
-  .linkedin{
-    font-size: 1em;
+  .linkedin {
+    font-size: 0.9em;
+  }
+  .btn-context {
+    font-size: 15px;
+    padding: 8px 8px;
+  }
+  .btn-context .download,
+  .btn-context .cv {
+    font-size: 20px;
+  }
+  .email-right {
+    width: 360px;
+    display: inline-block;
+  }
+  .connect {
+    margin-top: 60px;
+    column-gap: 27px;
   }
 }
 
@@ -522,18 +534,6 @@ textarea.form-control:focus {
   .ux {
     font-size: 30px;
   }
-  .btn-context {
-    padding: 18px 25px;
-  }
-  .btn-context .download {
-    font-size: 36px;
-  }
-  .btn-context .cv {
-    font-size: 36px;
-  }
-  .btn-context .bi {
-    font-size: 2.3em;
-  }
   .breif-context {
     grid-auto-flow: column;
     margin-top: 40px;
@@ -543,32 +543,49 @@ textarea.form-control:focus {
     font-size: 18px;
     line-height: 33px;
   }
-  .aboutme-context span{
+  .aboutme-context span {
     width: 100%;
     font-size: 28px;
   }
-  .aboutme-context{
+  .aboutme-context {
     grid-gap: 2.5em 29px;
   }
-  .tech-box .btn{
+  .tech-box .btn {
     font-size: 23px;
     margin: 13px;
   }
-  .tech-logo img{
+  .tech-logo img {
     width: 59px;
     height: 59px;
-    }
-  .tech-logo{
+  }
+  .tech-logo {
     grid-gap: 20px;
     width: 100%;
   }
-  .connect-headline{
+  .connect-headline {
     font-size: 160px;
-    margin-top: 60px;
   }
-  .connect-sub{
+  .connect-sub {
     font-size: 160px;
     letter-spacing: -10.2px;
+  }
+  .btn-context {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+  .btn-context .download,
+  .btn-context .cv {
+    font-size: 30px;
+  }
+  .email-right {
+    width: 520px;
+  }
+  .connect {
+    margin-top: 60px;
+    column-gap: 27px;
+  }
+  .getInTouch {
+    justify-content: space-evenly;
   }
 }
 
@@ -599,15 +616,17 @@ textarea.form-control:focus {
     font-size: 20px;
     line-height: 33px;
   }
-  .aboutme-context{
+  .aboutme-context {
     grid-gap: 2.5em 5em;
   }
-  .connect-headline{
+  .connect-headline {
     font-size: 160px;
-    margin-top: 60px;
   }
-  .connect-sub{
+  .connect-sub {
     font-size: 160px;
     letter-spacing: -10.2px;
+  }
+  .input-group > .form-control {
+    height: 72px;
   }
 }

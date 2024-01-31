@@ -266,19 +266,9 @@ function Home() {
           <div className="getInTouch">
             <a href="./Sirada_CV.pdf" download>
               <button type="button" className="btn-download">
-                <div
-                  className="btn-context"
-                >
-                  <span
-                    className="download me-3"
-                  >
-                    Download
-                  </span>
-                  <span
-                    className="cv"
-                  >
-                    CV
-                  </span>
+                <div className="btn-context">
+                  <span className="download me-3">Download</span>
+                  <span className="cv">CV</span>
                   <i
                     className="bi bi-box-arrow-up-right"
                     style={{
@@ -307,7 +297,7 @@ function Home() {
           method="GET"
           encType="application/x-www-form-urlencoded"
         >
-          <div className="email-right" style={{ width: "380px" }}>
+          <div className="email-right">
             <div class="input-group ">
               <input
                 name="subject"
