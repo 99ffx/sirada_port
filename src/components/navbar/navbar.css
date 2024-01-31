@@ -1,54 +1,96 @@
 .headline-left {
-    color: #fff;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.headline-center {
+  color: #fff;
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
     font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me{
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
 }
 
 .contact-me .btn {
-    border-radius: 24px;
-    border: 2px solid #96f18e;
-    padding: 10px 17px;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 600;
-    --bs-btn-hover-bg: #96f18e;
-    --bs-btn-hover-border-color: #96f18e;
-}
-.contact-me .btn:hover{
-    color: #27323A;
-}
-
-.contact-me .btn:first-child:active{
-    --bs-btn-hover-bg: #96f18e;
-    --bs-btn-hover-border-color: #96f18e;
-}
-
-.col-3{
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-.col-9{
-    display: flex;
-    align-items: center;
-}
-
-.container{
-    padding: 5px;
-}
-
-.linkedin{
-    border: 2px solid #96f18e;
-    padding: 1px 12px;
-    border-radius: 42px;
+  border-radius: 24px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  border: 2px solid #96f18e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  --bs-btn-hover-bg: #96f18e;
+  --bs-btn-hover-border-color: #96f18e;
+  align-items: center;
 }
 
 
+.col-3 {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 
+.col-9 {
+  display: flex;
+  align-items: center;
+}
 
+.container {
+  padding: 5px;
+}
 
+.contact-me .btn:hover {
+  color: #27323a;
+}
 
+.contact-me .btn:first-child:active {
+  --bs-btn-hover-bg: #96f18e;
+  --bs-btn-hover-border-color: #96f18e;
+}
+
+@media screen and (max-device-width: 480px) {
+  .headline-left {
+    font-size: 28px;
+  }
+  .bi-envelope{
+    font-size: 1.5em;
+  }
+  .linkedin{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  .headline-left {
+    font-size: 32px;
+  }
+}
+@media screen and (min-device-width: 1024px) {
+  .headline-left {
+    font-size: 32px;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  .headline-left {
+    font-size: 35px;
+  }
+}
+@media screen and (min-device-width: 1201px) {
+  .headline-left {
+    font-size: 40px;
+  }
+}
