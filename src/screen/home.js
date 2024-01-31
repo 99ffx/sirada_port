@@ -19,25 +19,9 @@ import { useMediaQuery } from "react-responsive";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
+  const isLandScape = useMediaQuery({ orientation:'landscape' });
   return (
     <div>
-      {/* <div className="circle">
-        <svg height="1072" width="1072">
-          <circle
-            cx="10"
-            cy="45%"
-            r="50%"
-            fill="none"
-            stroke="#899CA4"
-            style={{
-              mixBlendMode: "soft-light",
-              strokeWidth: "40px",
-              opacity: '10%'
-            }}
-          />
-        </svg>
-        </div> */}
-
       <div className="headline-sub container">
         <div className="headline container">
           <span style={{ color: "#5C6E75" }}>S</span>
@@ -127,23 +111,6 @@ function Home() {
       <hr style={{ marginTop: "70px", opacity: "1", color: "white" }} />
 
       <div className="aboutMe container">
-        {/* <div className="circle2">
-        <svg height="1072" width="1072">
-          <circle
-            cx="10%"
-            cy="610px"
-            r="40%"
-            fill="none"
-            stroke="#899CA4"
-            style={{
-              mixBlendMode: "soft-light",
-              strokeWidth: "40px",
-              opacity: '10%',
-      
-            }}
-          />
-        </svg>
-        </div> */}
         <div className="aboutMe-wrapper">
           <div className="aboutMe-headline1">ABOUT</div>
           <div className="aboutMe-headline2">ME</div>

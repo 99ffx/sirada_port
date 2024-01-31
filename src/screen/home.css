@@ -149,6 +149,7 @@
 .aboutMe-wrapper {
   margin-top: 120px;
   display: block;
+  position: relative;
 }
 
 .aboutMe-headline1 {
@@ -163,8 +164,8 @@
   font-family: Tenor Sans;
   font-size: 160px;
   text-align: center;
-  margin-left: 44.5%;
-  margin-top: -155px;
+  /* margin-left: 44.5%; */
+  margin-top: -155px; 
 }
 
 .aboutme-context {
@@ -238,6 +239,7 @@
   font-size: 110px;
   font-weight: 400;
   line-height: 112%;
+  margin-top: 60px;
 }
 
 input.form-control,
@@ -393,9 +395,11 @@ textarea.form-control:focus {
   .aboutMe-headline2 {
     font-size: 100px;
     margin-top: -24%;
+    position: relative;
   }
   .aboutMe-wrapper {
     margin-top: 140px;
+    position: relative;
   }
   .aboutme-context {
     font-size: 18px;
