@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
@@ -16,10 +16,39 @@ import scss from "../assests/sass.png";
 import postman from "../assests/postman.png";
 import TypeIt from "typeit-react";
 import { useMediaQuery } from "react-responsive";
+import emailjs from "emailjs-com";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
-  const isLandScape = useMediaQuery({ orientation:'landscape' });
+  const [success, setSuccess] = useState(true);
+  // const isLandScape = useMediaQuery({ orientation:'landscape' });
+
+  function sendEmail(e) {
+    e.preventDefault();
+    setSuccess(false);
+    emailjs
+      .sendForm(
+        "service_eygtxuq",
+        "template_izcgpd6",
+        e.target,
+        "VOID9sQGOv3Z2OEfz"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Done :)")
+          setSuccess(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccess(false);
+        }
+      );
+   
+  }
+
+
+  console.log(success);
   return (
     <div>
       <div className="headline-sub container">
@@ -259,11 +288,9 @@ function Home() {
             </div>
           </div>
         </div>
-        <form
-          action="mailto:sirada.2635@gmail.com"
-          method="GET"
-          encType="application/x-www-form-urlencoded"
-        >
+        <form 
+        onSubmit={sendEmail} 
+        id="myForm">
           <div className="email-right">
             <div class="input-group ">
               <input
@@ -278,6 +305,7 @@ function Home() {
 
             <div class="input-group " style={{ marginTop: "40px" }}>
               <input
+                name="email"
                 type="email"
                 class="form-control"
                 placeholder="What’s your Email ?"
@@ -299,6 +327,9 @@ function Home() {
               ></textarea>
             </div>
             <input className="btn-send" type="submit" value="Send"></input>
+            {/* <button className="btn-send" type="submit">
+              Send
+            </button> */}
           </div>
         </form>
       </div>
