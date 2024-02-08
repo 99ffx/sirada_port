@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React} from "react";
 import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
@@ -20,12 +20,9 @@ import emailjs from "emailjs-com";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
-  const [success, setSuccess] = useState(true);
-  // const isLandScape = useMediaQuery({ orientation:'landscape' });
 
   function sendEmail(e) {
     e.preventDefault();
-    setSuccess(false);
     emailjs
       .sendForm(
         "service_eygtxuq",
@@ -37,18 +34,14 @@ function Home() {
         (result) => {
           console.log(result.text);
           alert("Done :)")
-          setSuccess(true);
         },
         (error) => {
           console.log(error.text);
-          setSuccess(false);
+          alert("There's error going on :(. Please try again later")
         }
       );
    
   }
-
-
-  console.log(success);
   return (
     <div>
       <div className="headline-sub container">
@@ -113,8 +106,8 @@ function Home() {
         </div>
 
         <div className="motto">
-          <i class="bi1 bi-asterisk"></i>
-          <i class="bi2 bi-asterisk"></i>
+          <i className="bi1 bi-asterisk"></i>
+          <i className="bi2 bi-asterisk"></i>
           <TypeIt
             as={"h3"}
             options={{
@@ -147,33 +140,33 @@ function Home() {
 
         <div className="aboutme-context">
           <span className="item1">
-            <i class="bi bi-person-heart" style={{ color: "#96f18e" }}></i>
+            <i className="bi bi-person-heart" style={{ color: "#96f18e" }}></i>
             <br />
             Self-Motivated
           </span>
           <span className="item2">
-            <i class="bi bi-arrow-left-right" style={{ color: "#96f18e" }}></i>
+            <i className="bi bi-arrow-left-right" style={{ color: "#96f18e" }}></i>
             <br />
             Rapid and Adaptive
           </span>
           <span className="item3">
-            <i class="bi bi-plus-circle-fill" style={{ color: "#96f18e" }}></i>
+            <i className="bi bi-plus-circle-fill" style={{ color: "#96f18e" }}></i>
             <br />
             Possess Positive Attitude
           </span>
           <span className="item4">
-            <i class="bi bi-book-fill" style={{ color: "#96f18e" }}></i>
+            <i className="bi bi-book-fill" style={{ color: "#96f18e" }}></i>
             <br />
             Eager to Learn
           </span>
           <span className="item5">
-            <i class="bi bi-award-fill" style={{ color: "#96f18e" }}></i>
+            <i className="bi bi-award-fill" style={{ color: "#96f18e" }}></i>
             <br />
             Solution Oriented Professional
           </span>
           <span className="item6">
             <i
-              class="bi bi-chat-square-quote-fill"
+              className="bi bi-chat-square-quote-fill"
               style={{ color: "#96f18e" }}
             ></i>
             <br />
@@ -203,26 +196,26 @@ function Home() {
             <img src={figma} alt="" width="66px" height="66px" />
             <img src={materialUI} alt="" width="69px" height="69px" />
             <i
-              class="bi bi-bootstrap-fill"
+              className="bi bi-bootstrap-fill"
               style={{ fontSize: "69px", color: "#6f42c1" }}
             ></i>
           </div>
         )}
         {!isMobile && (
           <div className="tech-box">
-            <button class="btn">HTML</button>
-            <button class="btn">CSS</button>
-            <button class="btn">SCSS</button>
-            <button class="btn">Node.js</button>
-            <button class="btn">Figma</button>
-            <button class="btn">Javascript</button>
-            <button class="btn">Typescript</button>
-            <button class="btn">Ant Design</button>
-            <button class="btn">Material UI</button>
-            <button class="btn">State Management</button>
-            <button class="btn">Bootstrap</button>
-            <button class="btn">Angular</button>
-            <button class="btn">React Js</button>
+            <button className="btn">HTML</button>
+            <button className="btn">CSS</button>
+            <button className="btn">SCSS</button>
+            <button className="btn">Node.js</button>
+            <button className="btn">Figma</button>
+            <button className="btn">Javascript</button>
+            <button className="btn">Typescript</button>
+            <button className="btn">Ant Design</button>
+            <button className="btn">Material UI</button>
+            <button className="btn">State Management</button>
+            <button className="btn">Bootstrap</button>
+            <button className="btn">Angular</button>
+            <button className="btn">React Js</button>
           </div>
         )}
         {!isMobile && (
@@ -292,29 +285,29 @@ function Home() {
         onSubmit={sendEmail} 
         id="myForm">
           <div className="email-right">
-            <div class="input-group ">
+            <div className="input-group ">
               <input
                 name="subject"
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="What’s the topic ?"
                 onFocus={(e) => (e.target.placeholder = " ")}
                 onBlur={(e) => (e.target.placeholder = "What’s the topic ?")}
               />
             </div>
 
-            <div class="input-group " style={{ marginTop: "40px" }}>
+            <div className="input-group " style={{ marginTop: "40px" }}>
               <input
                 name="email"
                 type="email"
-                class="form-control"
+                className="form-control"
                 placeholder="What’s your Email ?"
                 onFocus={(e) => (e.target.placeholder = " ")}
                 onBlur={(e) => (e.target.placeholder = "What’s the Email ?")}
               />
             </div>
 
-            <div class="input-group" style={{ marginTop: "40px" }}>
+            <div className="input-group" style={{ marginTop: "40px" }}>
               <textarea
                 name="body"
                 className="form-control"
@@ -327,9 +320,6 @@ function Home() {
               ></textarea>
             </div>
             <input className="btn-send" type="submit" value="Send"></input>
-            {/* <button className="btn-send" type="submit">
-              Send
-            </button> */}
           </div>
         </form>
       </div>
