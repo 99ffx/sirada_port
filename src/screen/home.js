@@ -1,4 +1,4 @@
-import { React} from "react";
+import { React, useState } from "react";
 import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
@@ -20,6 +20,11 @@ import emailjs from "emailjs-com";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
+  const isIg = window.navigator.userAgent.includes("Instagram");
+
+  const confidential = () => {
+    return alert("Unfortunately you have no access, please contact me directly for more details.");
+  };
 
   function sendEmail(e) {
     e.preventDefault();
@@ -33,14 +38,13 @@ function Home() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Done :)")
+          alert("Done :)");
         },
         (error) => {
           console.log(error.text);
-          alert("There's error going on :(. Please try again later")
+          alert("There's error going on :(. Please try again later");
         }
       );
-   
   }
   return (
     <div>
@@ -55,15 +59,27 @@ function Home() {
         </div>
         <span className="portfolio">PORTFOLiO</span>
         <span className="ux">Medical Imaging and Web Development</span>
-        <a href="./Sirada_CV.pdf" download>
-          <button type="button" className="btn">
-            <div className="btn-context">
-              <span className="download me-3">Download</span>
-              <span className="cv">CV</span>
-              <i className="bi bi-box-arrow-up-right"></i>
-            </div>
-          </button>
-        </a>
+        <div>
+          {isIg ? (
+            <button type="button" className="btn" onClick={confidential}>
+              <div className="btn-context">
+                <span className="download me-3">Download</span>
+                <span className="cv">CV</span>
+                <i className="bi bi-box-arrow-up-right"></i>
+              </div>
+            </button>
+          ) : (
+            <a href="{% if isIg = null or ./Sirada_CV.pdf}" download>
+              <button type="button" className="btn">
+                <div className="btn-context">
+                  <span className="download me-3">Download</span>
+                  <span className="cv">CV</span>
+                  <i className="bi bi-box-arrow-up-right"></i>
+                </div>
+              </button>
+            </a>
+          )}
+        </div>
       </div>
       <hr style={{ marginTop: "70px", opacity: "1", color: "white" }} />
       <div className="breif container" style={{ marginTop: "51px" }}>
@@ -145,12 +161,18 @@ function Home() {
             Self-Motivated
           </span>
           <span className="item2">
-            <i className="bi bi-arrow-left-right" style={{ color: "#96f18e" }}></i>
+            <i
+              className="bi bi-arrow-left-right"
+              style={{ color: "#96f18e" }}
+            ></i>
             <br />
             Rapid and Adaptive
           </span>
           <span className="item3">
-            <i className="bi bi-plus-circle-fill" style={{ color: "#96f18e" }}></i>
+            <i
+              className="bi bi-plus-circle-fill"
+              style={{ color: "#96f18e" }}
+            ></i>
             <br />
             Possess Positive Attitude
           </span>
@@ -253,8 +275,8 @@ function Home() {
           </span>
           <br />
           <div className="getInTouch">
-            <a href="./Sirada_CV.pdf" download>
-              <button type="button" className="btn-download">
+            {isIg ? (
+              <button type="button" className="btn-download" onClick={confidential}>
                 <div className="btn-context">
                   <span className="download me-3">Download</span>
                   <span className="cv">CV</span>
@@ -267,7 +289,23 @@ function Home() {
                   ></i>
                 </div>
               </button>
-            </a>
+            ) : (
+              <a href="./Sirada_CV.pdf" download>
+                <button type="button" className="btn-download">
+                  <div className="btn-context">
+                    <span className="download me-3">Download</span>
+                    <span className="cv">CV</span>
+                    <i
+                      className="bi bi-box-arrow-up-right"
+                      style={{
+                        marginLeft: "18px",
+                        color: "#5C6E75",
+                      }}
+                    ></i>
+                  </div>
+                </button>
+              </a>
+            )}
             <div className="linkedin">
               <a
                 href="https://www.linkedin.com/in/sirada-kittipaisarnkul-068854224/"
@@ -281,9 +319,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <form 
-        onSubmit={sendEmail} 
-        id="myForm">
+        <form onSubmit={sendEmail} id="myForm">
           <div className="email-right">
             <div className="input-group ">
               <input
