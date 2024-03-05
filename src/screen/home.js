@@ -69,7 +69,7 @@ function Home() {
               </div>
             </button>
           ) : (
-            <a href="{% if isIg = null or ./Sirada_CV.pdf}" download>
+            <a href="./Sirada_CV.pdf}" download>
               <button type="button" className="btn">
                 <div className="btn-context">
                   <span className="download me-3">Download</span>
