@@ -1,40 +1,41 @@
+.container .row{
+  align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+}
 .headline-left {
   color: #fff;
-  font-family: Poppins;
-  font-size: 32px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 300;
+  letter-spacing:8px ;
 }
 
 .headline-center {
-  color: #fff;
-    font-family: Poppins;
+  color: #D7FB00;
     font-size: 32px;
     font-style: normal;
     font-weight: 800;
     display: flex;
     justify-content: center;
+    letter-spacing:8px ;
 }
 
-.contact-me{
-  display: grid;
-  grid-gap: 10px;
-  grid-auto-flow: column;
-}
+
 
 .contact-me .btn {
+  padding: 10px 20px;
   border-radius: 24px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 10px;
-  border: 2px solid #96f18e;
-  color: #fff;
+  border: 2px solid #D7FB00;
   font-size: 16px;
   font-weight: 600;
-  --bs-btn-hover-bg: #96f18e;
-  --bs-btn-hover-border-color: #96f18e;
+  --bs-btn-hover-bg: #D7FB00;
+  --bs-btn-hover-border-color: #D7FB00;
+  color: #D7FB00;
   align-items: center;
 }
+
 
 
 .col-3 {
@@ -54,7 +55,7 @@
 }
 
 .contact-me .btn:hover {
-  color: #27323a;
+  color: #2C2C2C;
 }
 
 .contact-me .btn:first-child:active {
@@ -62,35 +63,5 @@
   --bs-btn-hover-border-color: #96f18e;
 }
 
-@media screen and (max-device-width: 480px) {
-  .headline-left {
-    font-size: 28px;
-  }
-  .bi-envelope{
-    font-size: 1.5em;
-  }
-  .linkedin{
-    font-size: 1.5em;
-  }
-}
 
-@media screen and (min-device-width: 768px) {
-  .headline-left {
-    font-size: 32px;
-  }
-}
-@media screen and (min-device-width: 1024px) {
-  .headline-left {
-    font-size: 32px;
-  }
-}
-@media screen and (min-device-width: 1200px) {
-  .headline-left {
-    font-size: 35px;
-  }
-}
-@media screen and (min-device-width: 1201px) {
-  .headline-left {
-    font-size: 40px;
-  }
-}
+
