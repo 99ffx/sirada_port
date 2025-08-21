@@ -38,12 +38,6 @@
   grid-auto-flow: column;
   align-items: center;
 }
-.btn-context-connect {
-  padding: 20px;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-}
 
 .btn-context .download {
   color: #5c6e75;
@@ -245,26 +239,14 @@
   font-size: 110px;
   font-weight: 400;
   line-height: 112%;
-  /* margin-top: 60px; */
-}
-
-.projects-headline {
-  color: #fff;
-  font-family: Tenor Sans;
-  font-size: 80px;
-  font-weight: 400;
-  line-height: 112%;
-  /* 89.6px */
-  letter-spacing: -6.4px;
-  text-align: center;
-  margin-top: 170px;
+  margin-top: 60px;
 }
 
 input.form-control,
 textarea.form-control {
-  background-color: transparent;
+  background-color: #27323a;
   border-radius: 10px;
-  border: 2px solid #27323a;
+  border: 3px solid #96f18e;
   color: white;
   text-align: center;
   font-size: 16px;
@@ -281,35 +263,31 @@ textarea.form-control::placeholder {
 
 input.form-control:focus,
 textarea.form-control:focus {
-  background-color: transparent;
-  border-color: #f5f5f5;
+  background-color: #5c6e75;
+  border-color: #96f18e;
   box-shadow: none;
   color: #f5f5f5;
 }
 
 .btn-send {
-  /* margin-top: 33px; */
-  width: 100%;
-  background-color: transparent;
-  color: #96f18e;
+  margin-top: 33px;
+  background-color: #29a19c;
+  color: #27323a;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   padding: 9px 25px;
-  border: #27323a 2px solid;
-  border-radius: 50px;
+  border-radius: 28px;
+  border-style: none;
 }
 
 .btn-send:hover {
-  background-color: #96f18e;
-  color: #27323a;
-  border: 2px solid #27323a;
+  background-color: #27323a;
+  color: #fff;
+  border: 2px solid #29a19c;
 }
 
 .connect {
-  border-radius: 50px;
-  padding: 50px;
-  background-color: #29a19d91;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-around;
@@ -323,31 +301,15 @@ textarea.form-control:focus {
   border-radius: 60px;
 }
 
-button.btn-download-connect{
-  background-color: #96f18e;
-  border-radius: 60px;
-  border: #27323a 2px solid;
-}
-
 .btn-download:hover {
   border: 3px solid #96f18e;
   background-color: #27323a;
 }
 
-.btn-download-connect:hover {
-  border: 3px solid #96f18e;
-  background-color: #27323a;
-}
-
 .linkedin {
-  border: 2px solid #27323a;
-  padding: 6px 18px;
+  border: 2px solid #96f18e;
+  padding: 1px 18px;
   border-radius: 42px;
-}
-
-.email-right{
-  display: grid;
-  gap: 20px;
 }
 
 .getInTouch {
@@ -461,7 +423,6 @@ button.btn-download-connect{
   }
   .connect {
     display: contents;
-    background-color: #29a19c;
   }
   .connect-headline {
     font-size: 70px;
@@ -482,10 +443,9 @@ button.btn-download-connect{
     font-size: 0.9em;
   }
   .email-right {
+    margin-top: 80px;
     width: 340px;
-    /* display: inline-block; */
-    display: grid;
-    gap: 20px;
+    display: inline-block;
   }
   /* input.form-control,
 textarea.form-control {
@@ -537,7 +497,7 @@ textarea.form-control {
   }
   .connect-headline {
     font-size: 90px;
-    /* margin-top: 60px; */
+    margin-top: 60px;
   }
   .connect-sub {
     font-size: 90px;
@@ -556,9 +516,7 @@ textarea.form-control {
   }
   .email-right {
     width: 360px;
-    /* display: inline-block; */
-    display: grid;
-    gap: 20px;
+    display: inline-block;
   }
   .connect {
     margin-top: 60px;
@@ -625,8 +583,6 @@ textarea.form-control {
   }
   .email-right {
     width: 520px;
-    display: grid;
-    gap: 20px;
   }
   .connect {
     margin-top: 60px;
@@ -661,7 +617,7 @@ textarea.form-control {
   }
 
   .explaination {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 33px;
   }
   .aboutme-context {
