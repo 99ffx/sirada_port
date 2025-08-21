@@ -21,6 +21,8 @@ import emailjs from "emailjs-com";
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
   const isIg = window.navigator.userAgent.includes("Instagram");
+  
+  
 
   const confidential = () => {
     return alert("Unfortunately you have no access, please contact me directly for more details.");
@@ -69,7 +71,7 @@ function Home() {
               </div>
             </button>
           ) : (
-            <a href="{% if isIg = null or ./Sirada_CV.pdf}" download>
+            <a href="/Sirada_CV.pdf" download>
               <button type="button" className="btn">
                 <div className="btn-context">
                   <span className="download me-3">Download</span>
@@ -89,36 +91,22 @@ function Home() {
         </div>
 
         <div className="breif-context container">
-          <div className="explaination">
+         <div className="explaination">
             I am a{" "}
             <span style={{ fontStyle: "italic", color: "#96f18e" }}>
-              Front End Developer
-            </span>{" "}
-            from Thailand With the industry experiences. I have passion in Web
-            Application {""}
-            <span style={{ fontStyle: "italic", color: "#96f18e" }}>
-              Programming
-            </span>{" "}
-            and{" "}
-            <span style={{ fontStyle: "italic", color: "#96f18e" }}>
-              Designing
+              Front End Developer and AI enthusiast{" "}
             </span>
-            . Currently on a thrilling journey pursuing a{" "}
-            <span style={{ fontStyle: "italic", color: "#96f18e" }}>
-              Master's Degree in Medical Imaging and Applications,
-            </span>{" "}
-            I'm driven by the vision of leveraging cutting-edge technology to
-            elevate the standards of Computer-Aided Diagnosis.
-          </div>
+            with experience in building web applications using Angular, React, and modern frameworks. My industry background includes working in Agile corporate environments, collaborating with cross-functional teams, and delivering intuitive, user-focused solutions. I enjoy combining creativity, design, and technology to develop scalable applications that enhance user experience and efficiency.
+          </div> 
           <img src={myPic} alt="" />
           <div className="explaination">
-            As a proactive and initiative-driven individual, I thrive on
-            initiating and completing tasks ahead of schedule. My experience
-            working and studying in multicultural settings has equipped me with
-            strong communication skills and the ability resolve conflicts
-            seamlessly. I bring a commitment to lifelong learning, ensuring I
-            stay at the forefront of advancements in my field.
-          </div>
+            Alongside this, I hold a Master’s in 
+            <span style={{ fontStyle: "italic", color: "#96f18e" }}>
+             {" "} Medical Imaging and Applications{" "}
+            </span>
+            
+             (Erasmus Mundus, Europe), where I specialized in applying AI and deep learning to medical image analysis. Through international study and research, I gained experience working in multicultural teams, strengthened my communication skills, and learned to solve problems across disciplines. I am proactive, detail-oriented, and passionate about continuous learning, ensuring I stay at the forefront of both front-end innovation and AI development.
+            </div>
         </div>
 
         <div className="motto">
@@ -258,26 +246,36 @@ function Home() {
           </div>
         )}
       </div>
+
+      {/* <div className="projects container">
+        <div className="projects-headline">
+        <span>WORKS</span>
+          <span style={{ color: "#29A19C" }}>/</span>
+          <span>PROJECTS</span>
+        </div>
+
+      </div> */}
+
       <div className="connect container">
         <div className="headline-left">
           <div className="connect-headline">
             <span style={{ color: "#FFF" }}>Let'</span>
-            <span style={{ color: "#29A19C" }}>s</span>
+            <span style={{ color: "#96f18e" }}>s</span>
             <br />
-            <div className="connect-sub" style={{ marginTop: "10px" }}>
+            <div className="connect-sub" style={{  }}>
               <span style={{ color: "#FFF" }}>Co</span>
               <span style={{ color: "#FFF" }}>n</span>
               <span>nect</span>
             </div>
           </div>
-          <span style={{ fontWeight: "400", marginTop: "27px" }}>
+          <span style={{ fontWeight: "400", color:"#27323a" }}>
             Don’t be a stranger !
           </span>
           <br />
           <div className="getInTouch">
             {isIg ? (
-              <button type="button" className="btn-download" onClick={confidential}>
-                <div className="btn-context">
+              <button type="button" className="btn-download-connect" onClick={confidential}>
+                <div className="btn-context-connect">
                   <span className="download me-3">Download</span>
                   <span className="cv">CV</span>
                   <i
@@ -291,8 +289,8 @@ function Home() {
               </button>
             ) : (
               <a href="./Sirada_CV.pdf" download>
-                <button type="button" className="btn-download">
-                  <div className="btn-context">
+                <button type="button" className="btn-download-connect">
+                  <div className="btn-context-connect">
                     <span className="download me-3">Download</span>
                     <span className="cv">CV</span>
                     <i
@@ -332,7 +330,7 @@ function Home() {
               />
             </div>
 
-            <div className="input-group " style={{ marginTop: "40px" }}>
+            <div className="input-group ">
               <input
                 name="email"
                 type="email"
@@ -343,7 +341,7 @@ function Home() {
               />
             </div>
 
-            <div className="input-group" style={{ marginTop: "40px" }}>
+            <div className="input-group">
               <textarea
                 name="body"
                 className="form-control"
