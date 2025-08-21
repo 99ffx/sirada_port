@@ -14,7 +14,7 @@ function footer() {
         }}
       />
       <div className="footer">
-        <div>Copyright © 2023 Sirada K. Portfolio</div>
+        <div>Copyright © 2025 Sirada K. Portfolio</div>
         <div style={{ display: "inline-flex" }}>
           <div>Design and Develop by</div>
           <div style={{ fontWeight: "800", marginLeft: "3px" }}>
