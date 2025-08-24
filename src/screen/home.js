@@ -1,4 +1,3 @@
-import { React, useState } from "react";
 import "../screen/home.css";
 import myPic from "../assests/1.png";
 import htmlLogo from "../assests/html.png";
@@ -48,9 +47,13 @@ function Home() {
         }
       );
   }
+
+
   return (
     <div>
-      <div className="headline-sub container">
+            <div className="headline-sub container">
+
+        
         <div className="headline container">
           <span style={{ color: "#5C6E75" }}>S</span>
           <span style={{ color: "#5C6E75" }}>i</span>
@@ -60,7 +63,7 @@ function Home() {
           <span style={{ color: "#5C6E75" }}>A</span>
         </div>
         <span className="portfolio">PORTFOLiO</span>
-        <span className="ux">Medical Imaging and Web Development</span>
+        <span className="ux">Medical Image Analysis and Web Development</span>
         <div>
           {isIg ? (
             <button type="button" className="btn" onClick={confidential}>

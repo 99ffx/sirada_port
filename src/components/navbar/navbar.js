@@ -78,7 +78,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <hr style={{ marginTop: "0", opacity: "1", color: "white" }} />
+      <hr style={{ marginTop: "0", opacity: "1", color: "white", marginBottom: "0" }} />
     </div>
   );
 }
