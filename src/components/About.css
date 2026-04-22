@@ -1,0 +1,132 @@
+/* ── mobile-first layout ── */
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* ── left column ── */
+.about__left .sec-num {
+  font-size: clamp(4rem, 18vw, 9rem);
+  margin-bottom: 0;
+}
+
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.about__stat-num {
+  display: block;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.about__stat-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+/* ── right column ── */
+.about__heading {
+  font-size: clamp(2rem, 7vw, 5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.about__heading em { font-style: italic; color: var(--rust); }
+
+.about__body {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* ── competency cards ── */
+.comp__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-top: 3rem;
+}
+
+.comp__card {
+  background: var(--cream);
+  padding: 1.5rem 1.25rem 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.35s;
+}
+.comp__card:hover { background: var(--ink); }
+.comp__card:hover .comp__name,
+.comp__card:hover .comp__desc { color: var(--cream); }
+.comp__card:hover .comp__icon { color: var(--rust); }
+.comp__card:hover .comp__line { width: 100%; }
+
+.comp__icon {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  transition: color 0.35s;
+}
+.comp__name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  transition: color 0.35s;
+}
+.comp__desc {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  line-height: 1.7;
+  color: var(--muted);
+  transition: color 0.35s;
+}
+.comp__line {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px; width: 0;
+  background: var(--rust);
+  transition: width 0.4s ease;
+}
+
+/* ── tablet ── */
+@media (min-width: 600px) {
+  .comp__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── desktop ── */
+@media (min-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+  }
+  .about__left .sec-num { margin-bottom: -1rem; }
+  .about__stats {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+  .comp__grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4rem;
+  }
+  .comp__card { padding: 2rem 2rem 2.5rem; }
+}

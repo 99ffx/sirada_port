@@ -1,0 +1,147 @@
+/* ── base (mobile-first) ── */
+.hero {
+  min-height: 100svh;
+  padding: 0 1.25rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── eyebrow ── */
+.hero__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.hero__eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--rust);
+  flex-shrink: 0;
+}
+
+/* ── name ── */
+.hero__name {
+  font-size: clamp(3.8rem, 16vw, 13rem);
+  font-weight: 300;
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+.hero__name em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+/* ── subtitle ── */
+.hero__sub {
+  font-size: clamp(1.2rem, 4.5vw, 3.5rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+/* ── bottom row ── */
+.hero__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero__bio {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 38ch;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ── side labels (hidden on mobile) ── */
+.hero__location { display: none; }
+
+/* ── rotating badge ── */
+.hero__badge {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  width: 72px;
+  height: 72px;
+}
+.hero__badge svg {
+  width: 100%; height: 100%;
+  animation: badge-spin 12s linear infinite;
+}
+.hero__badge-dot {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--rust);
+}
+@keyframes badge-spin { to { transform: rotate(360deg); } }
+
+/* ── tablet (≥ 600px) ── */
+@media (min-width: 600px) {
+  .hero {
+    padding: 0 2rem 4rem;
+  }
+  .hero__badge {
+    top: 1.5rem;
+    right: 2rem;
+    width: 88px; height: 88px;
+  }
+  .hero__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .hero__actions { flex-shrink: 0; }
+}
+
+/* ── desktop (≥ 1024px) ── */
+@media (min-width: 1024px) {
+  .hero { padding: 0 3rem 5rem; }
+  .hero__eyebrow::before { width: 2.5rem; }
+  .hero__sub { margin-bottom: 3rem; }
+  .hero__badge {
+    top: 2rem;
+    right: 3rem;
+    width: 110px; height: 110px;
+  }
+  .hero__location {
+    display: block;
+    position: absolute;
+    top: 50%; right: 3rem;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: center;
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
