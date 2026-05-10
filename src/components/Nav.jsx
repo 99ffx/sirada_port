@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Nav.css';
 
-const LINKS = ['About', 'Work', 'Stack', 'Contact'];
+const LINKS = [
+  { label: 'About',   href: '/#about' },
+  { label: 'Work',    href: '/work' },
+  { label: 'Stack',   href: '/#stack' },
+  { label: 'Contact', href: '/#contact' },
+];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
+  const isWorkPage = pathname.startsWith('/work');
 
-  // Close menu on scroll & track scroll position for bg
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
@@ -17,32 +24,29 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll);
   }, [open]);
 
-  // Prevent body scroll when menu open
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [open]);
 
-  const handleLink = () => setOpen(false);
-
   return (
     <>
-      <nav className={`nav${scrolled ? ' nav--scrolled' : ''}${open ? ' nav--open' : ''}`}>
-        <a href="#home" className="nav__logo">Sirada</a>
+      <nav className={`nav${scrolled ? ' nav--scrolled' : ''}${isWorkPage ? ' nav--solid' : ''}${open ? ' nav--open' : ''}`}>
+        <Link to="/" className="nav__logo">Sirada</Link>
 
-        {/* Desktop links */}
         <ul className="nav__links">
-          {LINKS.map((l) => (
-            <li key={l}>
-              <a href={`#${l.toLowerCase()}`}>{l}</a>
+          {LINKS.map(l => (
+            <li key={l.label}>
+              {l.href.startsWith('/#')
+                ? <a href={l.href}>{l.label}</a>
+                : <Link to={l.href}>{l.label}</Link>}
             </li>
           ))}
         </ul>
 
-        {/* Hamburger button (mobile only) */}
         <button
           className="nav__burger"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setOpen(v => !v)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
         >
@@ -51,12 +55,13 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Mobile full-screen menu */}
       <div className={`nav__mobile${open ? ' nav__mobile--open' : ''}`} aria-hidden={!open}>
         <ul className="nav__mobile-links">
           {LINKS.map((l, i) => (
-            <li key={l} style={{ '--i': i }}>
-              <a href={`#${l.toLowerCase()}`} onClick={handleLink}>{l}</a>
+            <li key={l.label} style={{ '--i': i }}>
+              {l.href.startsWith('/#')
+                ? <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
+                : <Link to={l.href} onClick={() => setOpen(false)}>{l.label}</Link>}
             </li>
           ))}
         </ul>

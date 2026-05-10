@@ -10,7 +10,8 @@ const LINKS = [
 
 export default function Contact() {
   return (
-    <section className="section" id="contact">
+    <section className="section contact" id="contact">
+      <div className="contact__moon" aria-hidden="true" />
       <div className="contact__inner">
         <p className="contact__small reveal">Let's work together</p>
         <h2 className="contact__heading reveal reveal--d1">
@@ -21,7 +22,7 @@ export default function Contact() {
           creative collaborations. Reach out — I'd love to hear what you're building.
         </p>
         <div className="contact__links reveal reveal--d3">
-          {LINKS.map((l) => (
+          {LINKS.map(l => (
             <a
               key={l.label}
               href={l.href}
