@@ -4,9 +4,9 @@ import './Work.css';
 
 const ALL_PROJECTS = [
   {
-    id: 1, slug: 'HR',
+    id: 1, slug: 'hr',
     tag: 'Power Automate - 2026',
-    title: 'Automated Candidate Screening System',
+    title: 'AI-Powered Candidate Screening System',
     category: 'powerplatform', art: 'art--1', size: 'large',
   },
   {

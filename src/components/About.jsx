@@ -10,7 +10,7 @@ const STATS = [
 const COMPETENCIES = [
   { num: 'i.',   icon: '◈', name: 'Microsoft Power Platform',          desc: 'Automated workflow and business apps that can enhance productivity.' },
   { num: 'ii.',  icon: '◎', name: 'Medical Image Analysis',        desc: 'Image processing for medical images such as MRI, CT, X-ray, and WSIs' },
-  { num: 'iii.', icon: '⬡', name: 'Deep Learning',     desc: 'Apply deep learning techniques to classification, segmentation, and registration tasks across 2D, 3D, and 4D imaging data.' },
+  { num: 'iii.', icon: '⬡', name: 'Deep Learning',     desc: 'Use deep learning for classification, segmentation, and registration across 2D–4D imaging data.' },
   { num: 'iv.',  icon: '◑', name: 'Frontend Development', desc: 'Designing and implementing user interfaces with modern web technologies.' },
 ];
 
@@ -41,9 +41,7 @@ export default function About() {
             <em>Thoughtful </em> technology,<br />shaped by  <em>curiosity.</em>
           </h2>
           <p className="about__body">
-            I'm Sirada, a Power Platform Engineer with experience in deeo learning for Medical Image analysis.
-            I enjoy working at the intersection of technology and creativity, building solutions that are both practical and thoughtful.
-            I'm natually curious, always eager to learn, and inspired by connecting with people from different backgrounds and disciplines. 
+            I’m Sirada, a PhD student in Federated Learning at Linköping University, where my research focuses on deep learning for medical images. My background includes work in medical image analysis and experience as a Power Platform Engineer, and I enjoy building solutions that sit at the intersection of technology, research, and creativity. I’m naturally curious, detail-oriented, and motivated by learning, collaboration, and meaningful impact.
           </p>
           <p className="about__body">
             Outside of work. you usually fidn me exploring creative hobbies like macramé. embroidery, and 35mm film photography.

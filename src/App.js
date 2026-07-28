@@ -4,7 +4,7 @@ import useScrollReveal from './hooks/useScrollReveal';
 
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import Marquee from './components/Marquee';
+// import Marquee from './components/Marquee';
 import About from './components/About';
 import Work from './components/Work';
 import Stack from './components/Stack';
@@ -82,7 +82,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <Marquee />
+      {/* <Marquee /> */}
       <About />
       <div className="divider" />
       <Work />

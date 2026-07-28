@@ -4,71 +4,70 @@ import './RecentWork.css';
 
 const PROJECTS = [
   {
-    id: 'bloom',
+    id: 'hr',
     num: '01',
-    tag: 'UI/UX · Mobile App',
-    title: 'Bloom — Wellness App',
-    titleEm: 'Wellness App',
-    titleLead: 'Bloom — ',
-    sub: 'A mindfulness platform for slow mornings.',
-    art: 'art-bloom',
+    tag: 'Power Platform',
+    titleEm: 'Screening System',
+    titleLead: 'AI-Powered Candidate ',
+    sub: 'Data Extraction and Workflow Automation for Recruiter',
+    art: 'art-hr',
     body: [
-      'End-to-end product design for a mindfulness platform serving 20k+ users across SEA. Sessions are guided by the moon\'s phase and the user\'s sleep rhythm — a slow, seasonal take on a category usually defined by streaks and notifications.',
-      'Led the redesign from research through component library. Doubled 7-day retention and reduced session abandonment by 38%.',
+      'Power Automate workflow that integrate with company\'s recruitment system to do CV extraction, grouping, and ranking. The system uses a combination of keyword matching, machine learning algorithms, and custom rules to analyze candidate information and automate the screening process.',
+      'This project help decrease the time spent on manual CV screening by 90% and improve the quality of shortlisted candidates, allowing recruiters to focus more on engaging with top talent and less on administrative tasks.',
     ],
-    meta: { Role: 'Lead Product Designer', Year: '2025', Client: 'Bloom Co.' },
-    pills: ['Research', 'UI Design', 'Prototype', 'iOS · Android'],
+    meta: { Role: 'Power Platform Developer', Year: '2026', Client: 'SEC - Thailand' },
+    pills: ['Power Automate', 'SharePoint', 'GenAI'],
     flip: false, dark: false, alt: false,
     divider: '✦ ◯ ✦',
   },
   {
-    id: 'kura',
+    id: 'bills',
     num: '02',
-    tag: 'Branding',
-    titleLead: 'Kura — ',
-    titleEm: 'Brand Identity',
-    sub: 'Japanese–Thai fusion, told through type.',
-    art: 'art-kura',
+    tag: 'Power Platform',
+    titleLead: 'Hospital Bill OCR ',
+    titleEm: 'Verification System',
+    sub: 'GenAI OCR and Validation Workflow for Healthcare Billing Verification',
+    art: 'art-bills',
     body: [
-      'Visual identity for a Japanese–Thai fusion restaurant in Bangkok\'s Ekkamai district. The mark is a stylised full moon over a rice paddy — one symbol, two cultures, sitting comfortably side by side.',
-      'Delivered logo system, custom typography, packaging, menu, and wayfinding. Featured in Brand New 2024.',
-    ],
-    meta: { Role: 'Brand Designer', Year: '2024', Client: 'Kura Restaurant' },
-    pills: ['Identity', 'Type Design', 'Packaging', 'Wayfinding'],
+      'Power Automate and Power Apps solution that automate the verification of hospital bills by extracting data from bill images using GenAI OCR, validating the extracted data against predefined rules and databases, and providing an interface for manual review and approval.',
+      'The system helps support internal and external audits, reduces errors, and improves accuracy.'
+     ],
+    meta: { Role: 'Power Platform Developer', Year: '2026', Client: 'SEC - Thailand' },
+    pills: ['Power Automate','Power Apps', 'SharePoint', 'GenAI','OCR'],
     flip: true, dark: false, alt: true,
     divider: '✦ ◐ ✦',
   },
   {
-    id: 'soi',
+    id: 'dress',
     num: '03',
-    tag: 'Web Design',
-    titleLead: 'Soi ',
-    titleEm: 'Studio',
-    sub: 'A portfolio for a Bangkok creative studio.',
+    tag: 'AI',
+    titleLead: 'Automated Detection of ',
+    titleEm: 'DRESS Syndrome',
+    sub: 'Deep learning for histopathology-based diagnosis for Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS)',
     art: 'art-soi',
     body: [
-      'A portfolio site for a Bangkok creative studio working in motion and installation art. Built in Webflow with custom GSAP scenes — every section is a small stage with its own light and pace.',
-      'Site received an Awwwards Honorable Mention and a CSS Design Awards Special Kudos in 2024.',
+      'Developed an AI-assisted diagnostic pipeline for detecting Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS) from whole-slide histopathology images. The project evaluated Multiple Instance Learning (MIL) architectures with state-of-the-art pathology foundation models to classify tissue samples without requiring pixel-level annotations.',
+      'The best-performing model achieved 83% AUC, while attention-based heatmaps provided visual explanations by highlighting tissue regions that contributed most to each prediction, improving the interpretability of the diagnostic process.',
     ],
-    meta: { Role: 'Designer · Developer', Year: '2024', Client: 'Soi Studio' },
-    pills: ['UI Design', 'Webflow', 'GSAP', 'CMS'],
+    meta: { Role: 'Developer', Year: '2025', Client: 'MAIA Master' },
+    pills: ['Medical Image Analysis', 'MIL', 'ABMIL', 'WSI'],
     flip: false, dark: true, alt: false,
     divider: '✦ ☾ ✦',
   },
   {
-    id: 'pacer',
+    id: 'colorectal',
     num: '04',
-    tag: 'Design System',
-    titleLead: 'Pacer — ',
-    titleEm: 'Component Library',
-    sub: '200+ components, one shared sun.',
+    tag: 'AI',
+    titleLead: 'Colorectal Cancer ',
+    titleEm: 'Detection',
+    sub: 'Computer-aided diagnosis from histopathology images.',
     art: 'art-pacer',
     body: [
-      'A 200+ component design system built for a fintech startup\'s product team. Tokens, primitives, patterns, and documentation — all orbiting a single source of truth that survived two product pivots.',
-      'Onboarded six designers and reduced average screen-design time by 60%. Now the foundation for three internal products.',
-    ],
-    meta: { Role: 'Design Systems Lead', Year: '2025', Client: 'Pacer (in-house)' },
-    pills: ['Design Tokens', 'Figma Library', 'Documentation', 'Governance'],
+        'Developed and compared three AI pipelines for colorectal cancer analysis using digital histopathology images. The project explored classical image processing, machine learning, and deep learning techniques for tissue segmentation and disease classification.',
+        'Experimental results showed that a U-Net model with an EfficientNet-B2 backbone achieved the best segmentation performance (93% Dice score), while the machine learning pipeline reached 83% classification accuracy across six colorectal tissue categories.',
+      ],
+    meta: { Role: 'Developer', Year: '2025', Client: 'MAIA Master' },
+    pills: ['Medical Image Analysis', 'DL', 'Image Processing', 'WSI','Colorectal Cancer'],
     flip: true, dark: false, alt: false,
     divider: null,
   },
@@ -100,10 +99,10 @@ export default function RecentWork() {
             <span className="sep">/</span>
             <span>Recent Work</span>
           </p>
-          <h1 className="page-head__title">A field guide to <em>recent orbits.</em></h1>
+          <h1 className="page-head__title">A glance to my <em>recent projects.</em></h1>
           <p className="page-head__intro">
-            Four projects across UI/UX, branding, and systems work — each with its own
-            gravity, its own seasons. Scroll through, or jump to one below.
+            Explore a collection of projects in AI, healthcare, and software engineering, from intelligent automation platforms to deep learning models for medical image
+  analysis.
           </p>
         </div>
       </header>
@@ -129,16 +128,6 @@ export default function RecentWork() {
             className={`project${p.alt ? ' project--alt' : ''}${p.dark ? ' project--dark' : ''}${p.flip ? ' project--flip' : ''}`}
           >
             <div className="project__inner">
-              <div className="project__art">
-                <div className={p.art} aria-hidden="true" />
-                <span className="project__art-num">
-                  {p.num}<small>{p.tag}</small>
-                </span>
-                <span className="project__art-strip">
-                  <span>img · {p.id}-cover-01.png</span>
-                  <span>{p.meta.Year} · 4:5</span>
-                </span>
-              </div>
               <div className="project__body">
                 <span className="project__tag">{p.tag}</span>
                 <h2 className="project__title">{p.titleLead}<em>{p.titleEm}</em></h2>
@@ -152,25 +141,20 @@ export default function RecentWork() {
                 <div className="project__pills">
                   {p.pills.map(pill => <span key={pill} className="pill">{pill}</span>)}
                 </div>
-                <div className="project__cta">
-                  <a href="#" className="btn btn--fill">View case study →</a>
-                  <a href="#" className="btn">Live preview ↗</a>
-                </div>
               </div>
             </div>
           </section>
-          {p.divider && (
+          {/* {p.divider && (
             <div className="div-star" aria-hidden="true">
               <span>{p.divider}</span>
             </div>
-          )}
+          )} */}
         </React.Fragment>
       ))}
 
       <section className="endstrip">
         <div className="endstrip__sun" aria-hidden="true" />
         <div className="endstrip__inner">
-          <p className="endstrip__small">end of the orbit</p>
           <h2 className="endstrip__h">Want to see what's <em>next?</em></h2>
           <div className="endstrip__row">
             <a href="/#contact" className="btn btn--fill">Say hello →</a>

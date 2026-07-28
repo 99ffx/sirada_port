@@ -2,10 +2,8 @@ import React from 'react';
 import './Contact.css';
 
 const LINKS = [
-  { label: 'sirada@email.com', href: 'mailto:sirada@email.com', primary: true },
-  { label: 'LinkedIn',  href: '#' },
-  { label: 'Behance',   href: '#' },
-  { label: 'Instagram', href: '#' },
+  { label: 'p.siradakit@gmail.com', href: 'mailto:p.siradakit@gmail.com', primary: true },
+  { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/sirada-kittipaisarnkul-068854224/' },
 ];
 
 export default function Contact() {
@@ -13,14 +11,14 @@ export default function Contact() {
     <section className="section contact" id="contact">
       <div className="contact__moon" aria-hidden="true" />
       <div className="contact__inner">
-        <p className="contact__small reveal">Let's work together</p>
         <h2 className="contact__heading reveal reveal--d1">
-          Got a project<br /><em>in mind?</em>
+          Let's<br /><em>Connect</em>
         </h2>
         <p className="contact__body reveal reveal--d2">
-          I'm currently available for freelance projects, full-time roles, and
-          creative collaborations. Reach out — I'd love to hear what you're building.
-        </p>
+          I'm always happy to connect with fellow researchers, developers, and anyone
+  interested in technology. Feel free to reach out through any of the channels
+  below.
+          </p>
         <div className="contact__links reveal reveal--d3">
           {LINKS.map(l => (
             <a

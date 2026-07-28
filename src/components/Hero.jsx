@@ -67,7 +67,8 @@ export default function Hero() {
 
       <div className="hero__bottom">
         <p className="hero__bio">
-          A Bangkok-based tech enthusiast with a curious mind and a love for learning, designing, and building things that can make a difference
+         I’m Sirada, a tech enthusiast currently pursuing a PhD in Federated Learning at Linköping University in Sweden. 
+         I enjoy learning, designing, and building things that make a meaningful difference.
         </p>
         <div className="hero__actions">
           <a href="#work" className="btn">View Work ↓</a>
