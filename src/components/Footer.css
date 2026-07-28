@@ -1,0 +1,17 @@
+.footer {
+  background: var(--ink);
+  color: rgba(245,239,222,.5);
+  padding: 2rem 1.25rem;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--font-sans);
+  font-size: .7rem; letter-spacing: .18em; text-transform: uppercase;
+  border-top: 1px solid var(--border-dark);
+  flex-wrap: wrap; gap: 1rem;
+}
+@media (min-width: 600px)  { .footer { padding: 2rem 2rem; } }
+@media (min-width: 1024px) { .footer { padding: 2rem 2.5rem; } }
+
+.footer a {
+  display: inline-flex; align-items: center; gap: .4rem;
+  color: var(--gold-soft);
+}

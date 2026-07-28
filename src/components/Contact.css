@@ -1,0 +1,70 @@
+.contact {
+  position: relative;
+  padding: 8rem 1.25rem;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 90%, rgba(200,80,42,.18) 0%, transparent 70%),
+    var(--cream);
+  overflow: hidden;
+}
+@media (min-width: 1024px) { .contact { padding: 10rem 2.5rem; } }
+
+.contact__moon {
+  position: absolute;
+  left: 50%; top: 8%;
+  transform: translateX(-50%);
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 70% 35%, #f5efde 0%, #ddd0b0 40%, transparent 70%);
+  box-shadow: inset -20px -10px 40px rgba(80,60,30,.25);
+  opacity: .7;
+}
+
+.contact__inner {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; z-index: 2;
+}
+.contact__small {
+  font-family: var(--font-sans);
+  font-size: .7rem; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  display: inline-flex; align-items: center; gap: .6rem;
+}
+.contact__small::before, .contact__small::after {
+  content: "✦"; color: var(--gold); font-size: .7rem;
+}
+.contact__heading {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: clamp(3.5rem, 9vw, 7rem);
+  line-height: .98; letter-spacing: -.02em;
+  margin-bottom: 2rem;
+}
+.contact__heading em { font-style: italic; color: var(--rust); }
+.contact__body {
+  font-size: 1.15rem; line-height: 1.6;
+  font-weight: 300;
+  max-width: 34rem;
+  margin: 0 auto 3rem;
+  color: #3a342a;
+}
+.contact__links {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: .75rem;
+}
+.contact__link {
+  font-family: var(--font-sans);
+  font-size: .72rem; letter-spacing: .18em; text-transform: uppercase;
+  padding: 1rem 1.6rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  transition: background .3s, color .3s;
+}
+.contact__link:hover { background: var(--ink); color: var(--cream); }
+.contact__link--primary {
+  background: var(--rust); color: var(--cream);
+  border-color: var(--rust);
+}
+.contact__link--primary:hover { background: var(--ink); border-color: var(--ink); }
